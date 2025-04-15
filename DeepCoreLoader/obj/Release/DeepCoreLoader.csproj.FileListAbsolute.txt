@@ -1,0 +1,18 @@
+C:\Users\Biscuit\Documents\Visual Studio 2022\NightWare-Project\DeepClient-Source\DeepCoreLoader\bin\Release\DeepCoreLoader.dll
+C:\Users\Biscuit\Documents\Visual Studio 2022\NightWare-Project\DeepClient-Source\DeepCoreLoader\bin\Release\DeepCoreLoader.pdb
+C:\Users\Biscuit\Documents\Visual Studio 2022\NightWare-Project\DeepClient-Source\DeepCoreLoader\bin\Release\MelonLoader.dll
+C:\Users\Biscuit\Documents\Visual Studio 2022\NightWare-Project\DeepClient-Source\DeepCoreLoader\bin\Release\0Harmony.dll
+C:\Users\Biscuit\Documents\Visual Studio 2022\NightWare-Project\DeepClient-Source\DeepCoreLoader\obj\Release\DeepCoreLoader.csproj.AssemblyReference.cache
+C:\Users\Biscuit\Documents\Visual Studio 2022\NightWare-Project\DeepClient-Source\DeepCoreLoader\obj\Release\DeepCoreLoader.csproj.CoreCompileInputs.cache
+C:\Users\Biscuit\Documents\Visual Studio 2022\NightWare-Project\DeepClient-Source\DeepCoreLoader\obj\Release\DeepCore.F2F6E0BC.Up2Date
+C:\Users\Biscuit\Documents\Visual Studio 2022\NightWare-Project\DeepClient-Source\DeepCoreLoader\obj\Release\DeepCoreLoader.dll
+C:\Users\Biscuit\Documents\Visual Studio 2022\NightWare-Project\DeepClient-Source\DeepCoreLoader\obj\Release\DeepCoreLoader.pdb
+C:\Users\Biscuit\Documents\GitHub\DeepClient\DeepClient-ML\DeepCoreLoader\bin\Release\DeepCoreLoader.dll
+C:\Users\Biscuit\Documents\GitHub\DeepClient\DeepClient-ML\DeepCoreLoader\bin\Release\DeepCoreLoader.pdb
+C:\Users\Biscuit\Documents\GitHub\DeepClient\DeepClient-ML\DeepCoreLoader\bin\Release\MelonLoader.dll
+C:\Users\Biscuit\Documents\GitHub\DeepClient\DeepClient-ML\DeepCoreLoader\bin\Release\0Harmony.dll
+C:\Users\Biscuit\Documents\GitHub\DeepClient\DeepClient-ML\DeepCoreLoader\obj\Release\DeepCoreLoader.csproj.AssemblyReference.cache
+C:\Users\Biscuit\Documents\GitHub\DeepClient\DeepClient-ML\DeepCoreLoader\obj\Release\DeepCoreLoader.csproj.CoreCompileInputs.cache
+C:\Users\Biscuit\Documents\GitHub\DeepClient\DeepClient-ML\DeepCoreLoader\obj\Release\DeepCore.F2F6E0BC.Up2Date
+C:\Users\Biscuit\Documents\GitHub\DeepClient\DeepClient-ML\DeepCoreLoader\obj\Release\DeepCoreLoader.dll
+C:\Users\Biscuit\Documents\GitHub\DeepClient\DeepClient-ML\DeepCoreLoader\obj\Release\DeepCoreLoader.pdb

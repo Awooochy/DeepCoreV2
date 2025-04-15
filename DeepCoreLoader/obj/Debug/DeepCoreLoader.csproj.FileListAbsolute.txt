@@ -1,0 +1,11 @@
+C:\Users\david\Desktop\DeepClient-main\DeepClient-ML\DeepCoreLoader\bin\Debug\DeepCoreLoader.dll
+C:\Users\david\Desktop\DeepClient-main\DeepClient-ML\DeepCoreLoader\bin\Debug\DeepCoreLoader.pdb
+C:\Users\david\Desktop\DeepClient-main\DeepClient-ML\DeepCoreLoader\bin\Debug\MelonLoader.dll
+C:\Users\david\Desktop\DeepClient-main\DeepClient-ML\DeepCoreLoader\bin\Debug\Newtonsoft.Json.dll
+C:\Users\david\Desktop\DeepClient-main\DeepClient-ML\DeepCoreLoader\bin\Debug\0Harmony.dll
+C:\Users\david\Desktop\DeepClient-main\DeepClient-ML\DeepCoreLoader\bin\Debug\Newtonsoft.Json.xml
+C:\Users\david\Desktop\DeepClient-main\DeepClient-ML\DeepCoreLoader\obj\Debug\DeepCoreLoader.csproj.AssemblyReference.cache
+C:\Users\david\Desktop\DeepClient-main\DeepClient-ML\DeepCoreLoader\obj\Debug\DeepCoreLoader.csproj.CoreCompileInputs.cache
+C:\Users\david\Desktop\DeepClient-main\DeepClient-ML\DeepCoreLoader\obj\Debug\DeepCore.F2F6E0BC.Up2Date
+C:\Users\david\Desktop\DeepClient-main\DeepClient-ML\DeepCoreLoader\obj\Debug\DeepCoreLoader.dll
+C:\Users\david\Desktop\DeepClient-main\DeepClient-ML\DeepCoreLoader\obj\Debug\DeepCoreLoader.pdb

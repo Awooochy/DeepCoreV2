@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\deepclient-be\\globalrefs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:globalrefs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\client\\mono\\qmplayerlistmono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\mono\\qmplayerlistmono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\client\\patching\\modules\\roommanagera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\patching\\modules\\roommanagera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\client\\module\\exploits\\ownernamespoofer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\module\\exploits\\ownernamespoofer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\client\\gui\\menus\\settingsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\gui\\menus\\settingsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\client\\gui\\menus\\exploitmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\gui\\menus\\exploitmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GlobalRefs.cs",
+              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\GlobalRefs.cs",
+              "RelativeDocumentMoniker": "GlobalRefs.cs",
+              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\GlobalRefs.cs",
+              "RelativeToolTip": "GlobalRefs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T09:46:46.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QMPlayerListMono.cs",
+              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\Client\\Mono\\QMPlayerListMono.cs",
+              "RelativeDocumentMoniker": "Client\\Mono\\QMPlayerListMono.cs",
+              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\Client\\Mono\\QMPlayerListMono.cs",
+              "RelativeToolTip": "Client\\Mono\\QMPlayerListMono.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:57:44.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomManagera.cs",
+              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\Client\\Patching\\Modules\\RoomManagera.cs",
+              "RelativeDocumentMoniker": "Client\\Patching\\Modules\\RoomManagera.cs",
+              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\Client\\Patching\\Modules\\RoomManagera.cs",
+              "RelativeToolTip": "Client\\Patching\\Modules\\RoomManagera.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T19:01:09.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OwnerNameSpoofer.cs",
+              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\Client\\Module\\Exploits\\OwnerNameSpoofer.cs",
+              "RelativeDocumentMoniker": "Client\\Module\\Exploits\\OwnerNameSpoofer.cs",
+              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\Client\\Module\\Exploits\\OwnerNameSpoofer.cs",
+              "RelativeToolTip": "Client\\Module\\Exploits\\OwnerNameSpoofer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T19:00:08.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SettingsMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\Client\\GUI\\Menus\\SettingsMenu.cs",
+              "RelativeDocumentMoniker": "Client\\GUI\\Menus\\SettingsMenu.cs",
+              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\Client\\GUI\\Menus\\SettingsMenu.cs",
+              "RelativeToolTip": "Client\\GUI\\Menus\\SettingsMenu.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAiwKEAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T18:38:28.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExploitMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\Client\\GUI\\Menus\\ExploitMenu.cs",
+              "RelativeDocumentMoniker": "Client\\GUI\\Menus\\ExploitMenu.cs",
+              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\Client\\GUI\\Menus\\ExploitMenu.cs",
+              "RelativeToolTip": "Client\\GUI\\Menus\\ExploitMenu.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwDcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T18:37:27.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EntryPoint.cs",
+              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\EntryPoint.cs",
+              "RelativeDocumentMoniker": "EntryPoint.cs",
+              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\DeepClient-BE\\EntryPoint.cs",
+              "RelativeToolTip": "EntryPoint.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T08:46:15.642Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+﻿global using VRCPlayer = MonoBehaviour1PublicOb_pOb_s_pBoGaOb_pStUnique;
+global using GamelikeInputController = MonoBehaviour2PublicSiTrUnique;
+global using VRCButtonHandle = ButtonPublicIMoveHandlerIEventSystemHandlerIPointerDownHandlerIPointerUpHandlerIPointerEnterHandlerIPointerExitHandlerISelectHandlerIDeselectHandlerSt_cBo_sObObStUnique;
+global using NetworkManager = MonoBehaviourPublicDaBoAc1ObDiOb2InHaUnique;
+global using USpeaker = MonoBehaviourPublicBoSiBoLiSi1ObSiBoInUnique;
+global using QuickMenu = UIElement1PublicCaGaCaObGa_cObMoGa_VUnique;
+global using HighlightsFXStandalone = MonoBehaviour2PublicSealedReInCoInhireInblreSiUnique;
+global using PortalInternal = MonoBehaviourPublicStSiBoInSeSoSiInStObUnique;
+global using ImageEx = ImagePublicVoOnVeVoRaBoCaVeUnique;
+global using VRCBtnToolTip = MonoBehaviourPublicIPointerEnterHandlerIEventSystemHandlerIPointerExitHandler1Lo_lLo_aBoLoBo1BoUnique;
+global using NameplateManager = MonoBehaviourPublicOb1BoHaBoLi1ObCoTeUnique;
+global using VRCUiPopupManager = MonoBehaviourPublicObBoObObObObObObObObUnique;
+global using TextMeshProUGUIEx = TextMeshProUGUIPublicLo_l1LaLo_cStLoUnique;
+global using HudController = MonoBehaviourPublicObnoObmousCaObhuGa_gUnique;
+global using UIManager = UIManagerPublicBoObAc1AcGaBo1DiAcUnique;
+global using VRCPlusSub = ObjectPublicStBoStDaBo1StILBo1Unique;
+///
+/// The rest of globalusing is from HomoTool:https://github.com/tado1203/HomoTool/blob/master/HomoTool/GlobalUsings.cs
+///
+global using LoadBalancingClient_Internal = ObjectPublicIPhotonPeerListenerObStNuStOb1CoObBoDiUnique;
+global using PhotonNetwork_Internal = ObjectPublicAbstractSealedObInObStInCo2ObInBoUnique;
+global using RaiseEventOptions_Internal = ObjectPublicObByObInByObObUnique;
+global using PlayerNet_Internal = MonoBehaviour1PublicOb_vInByInBoObBySiObUnique;
+global using UdonSync_Internal = MonoBehaviour1PrivateBoUdOb1DiObBo2InObUnique;
+global using RoomManager_Internal = MonoBehaviourPublicBoApSiApBoObStApBo1Unique;
