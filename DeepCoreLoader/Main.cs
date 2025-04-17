@@ -66,12 +66,20 @@ namespace DeepCoreLoader
                 {
                     MelonLogger.Msg("New version available, initiating update...");
                     AuthAPI authAPI = new AuthAPI();
-                    if (authAPI.Auth()) // Modified Auth() to return bool
+                    
+                    try
                     {
-                        // Update version file
-                        File.WriteAllText(_versionFilePath, serverVersion);
-                        _dllBytes = File.ReadAllBytes(_dllPath);
-                        MelonLogger.Msg($"Updated to version {serverVersion}");
+                        if (authAPI.Auth()) // Modified Auth() to return bool
+                        {
+                            // Update version file
+                            File.WriteAllText(_versionFilePath, serverVersion);
+                            _dllBytes = File.ReadAllBytes(_dllPath);
+                            MelonLogger.Msg($"Updated to version {serverVersion}");
+                        }
+                    }
+                    catch (Exception FailedUpdate)
+                    {
+                        MelonLogger.Error($"Failed update Error: {FailedUpdate}");
                     }
                 }
                 else

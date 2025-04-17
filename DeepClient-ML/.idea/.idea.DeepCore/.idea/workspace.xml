@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="30bee687-ddae-4a22-b1e6-08f55116d6bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DeepCore.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DeepCore/FileContentIndex/2d875127-187f-4e89-8ffd-be27dfb63e2c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DeepCore/FileContentIndex/4e45abb7-3edc-486f-8479-0a599d1ec90b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DeepCore/FileContentIndex/5331d756-116f-4d85-96c6-560bcf53ec49.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DeepCore/FileContentIndex/9d387099-35d8-44df-b4c3-19c705d3432f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DeepCore/FileContentIndex/fac1ec2d-67de-4efc-a158-258ff7aa3772.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepCore.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Protecc/BSODTriggerThings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Protecc/BaseProtecc.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerAPI/LoggerAPI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.ResolveComReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.ResolveComReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/Interop.SystemMonitor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/Interop.SystemMonitor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/.idea/.idea.DeepCoreLoader.dir/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/.idea/.idea.DeepCoreLoader.dir/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/.idea/.idea.DeepCoreLoader.dir/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/.idea/.idea.DeepCoreLoader.dir/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/AuthAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/AuthAPI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/bin/Debug/DeepCoreLoader.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/bin/Debug/DeepCoreLoader.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/bin/Debug/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/bin/Debug/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/DeepCoreLoader.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/DeepCoreLoader.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/DeepCoreLoader.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/DeepCoreLoader.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/DeepCoreLoader.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/DeepCoreLoader.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/DeepCoreLoader.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/DeepCoreLoader.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/DeepCoreLoader.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/obj/Debug/DeepCoreLoader.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/net20/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/net20/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/net35/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/net35/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/net40/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/net40/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/net45/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/net45/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/net6.0/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/net6.0/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.0/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.0/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.3/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.3/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/netstandard2.0/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DeepCoreLoader/packages/Newtonsoft.Json.13.0.3/lib/netstandard2.0/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2vpfpWOasyAOLLljjcOJxzPx4Zl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\david\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\david\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\david\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30bee687-ddae-4a22-b1e6-08f55116d6bb" name="Changes" comment="" />
+      <created>1744847121199</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744847121199</updated>
+      <workItem from="1744847122745" duration="1331000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

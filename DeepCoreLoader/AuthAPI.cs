@@ -17,25 +17,30 @@ namespace DeepLoader.ServerAPI
     internal class AuthAPI
     {
         private const string KeyFormat = "^KEY_[A-Za-z0-9]{60}$";
-        private string Context;
+        private string Context; //Context is used to report on Unauthed logs why the authing went wrong.
         private bool isAuthenticated = false;
-        private string AuthKey = "";
-        private readonly string appDataFolder;
-        private readonly string keyFilePath;
-        private readonly string dllSavePath;
+        private string AuthKey = ""; //Here we hold the user auth key.
+        private readonly string appDataFolder; //Here we have the folder for keys.
+        private readonly string keyFilePath; //Here we save keys
+        private readonly string dllSavePath; //Where we place the downloaded client
 
         public AuthAPI()
         {
+            
+            //Here we save keys, this is global for the loader, the launcher, and the client.
             appDataFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DPC", "DeepCoreClient");
             keyFilePath = Path.Combine(appDataFolder, "TONTOELQUELOLEA");
+            
+            
             dllSavePath = Path.Combine(MelonUtils.BaseDirectory, "Mods/DeepCore.dll");
 
+            // We check if the DPC/DeepCoreClient folder exists, if not we make it.
             if (!Directory.Exists(appDataFolder))
             {
                 Directory.CreateDirectory(appDataFolder);
             }
 
-            // Ensure Mods directory exists
+            // Ensure Mods directory exists if not we make it.
             string modsDir = Path.Combine(MelonUtils.BaseDirectory, "Mods");
             if (!Directory.Exists(modsDir))
             {
@@ -43,6 +48,7 @@ namespace DeepLoader.ServerAPI
             }
         }
 
+        //Useless thing
         public void awooochyWasHere()
         {
             String StopMessingWithMyClientYouWontFindAnyMalwareOrLoggerIsCleanNowGoAndCloseYourDecompiler = "Deja mi puto loader tranquilo, si sigues metiendo las narizes donde no debes quizas si encuentres algo que no te guste";
@@ -53,8 +59,7 @@ namespace DeepLoader.ServerAPI
             string AUTHhwid = GetHardwareID();
             string AUTHIPV4 = GetIPv4Address();
             string AUTHIPV6 = GetIPv6Address(); // New: Fetch IPv6 address
-            string loaderToken =
-                "VerifiedLoader_IZ7xjF5X1X9U4DQ2I8X9735z16dj86041L7a74g4Dtvwikz1eky4Vdbq64kV";
+            string loaderToken = "VerifiedLoader_IZ7xjF5X1X9U4DQ2I8X9735z16dj86041L7a74g4Dtvwikz1eky4Vdbq64kV"; // This Actually tells the auther php script that this is a dll request and not a simple auth, this will trigger a diferent answer formad by the php script.
 
             bool keyExists = File.Exists(keyFilePath);
 
@@ -141,6 +146,7 @@ namespace DeepLoader.ServerAPI
                             string base64Data = jsonResponse["data"]?.ToString();
                             if (string.IsNullOrEmpty(base64Data) || !base64Data.StartsWith("DLL:"))
                             {
+                                Context = "Invalid DLL data recived by Loader";
                                 MelonLogger.Error("Invalid DLL data received");
                                 return false;
                             }
@@ -165,7 +171,21 @@ namespace DeepLoader.ServerAPI
 
                                 // Save DLL with additional error handling
                                 //MelonLogger.Msg("Saving DLL file...");
-                                File.WriteAllBytes(dllSavePath, dllBytes);
+                                try
+                                {
+                                    File.WriteAllBytes(dllSavePath, dllBytes);
+                                }
+                                catch (Exception FailureSavingDll)
+                                {
+                                    MelonLogger.Msg("NEW VERSION AVAILABLE, PLEASE CLOSE VRCHAT AND DELETE DEEPCORE FROM MODS FOLDER FOR GETTING THE UPDATE!");
+                                    Context = "Dll writting failed on the Loader? We gonna guess it's update time!";
+                                    
+                                    MelonLogger.Msg("Waiting 10 seconds...");
+                                    Thread.Sleep(10000);
+                                    Environment.Exit(0);
+                                }
+                                
+                                
                 
                                 // Verify file was actually saved
                                 int maxAttempts = 5;
@@ -218,17 +238,20 @@ namespace DeepLoader.ServerAPI
                         }
         
                         MelonLogger.Msg(jsonResponse["message"]?.ToString() ?? "Unknown error");
+                        Context = "Unknown error, Data from Json was invalid";
                         return false;
                     }
                     catch (Exception parseEx)
                     {
                         MelonLogger.Error($"Response parsing error: {parseEx.Message}");
+                        Context = "Response parsing error";
                         return false;
                     }
                 }
                 catch (WebException ex)
                 {
                     MelonLogger.Error($"Network error: {ex.Message}");
+                    Context = "Network error";
                     return false;
                 }
             }
@@ -376,7 +399,7 @@ namespace DeepLoader.ServerAPI
                 }
                 catch (WebException)
                 {
-                    MelonLogger.Msg("ERROR FETCHING IP");
+                    MelonLogger.Msg("[IGNORE THIS IF YOU DON'T HAVE IPV4] ERROR FETCHING IPV4");
                     Environment.Exit(1);
                     return "Unknown";
                 }
