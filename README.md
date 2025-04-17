@@ -1,6 +1,6 @@
 # DeepCoreV2 - ML/BE Internal for VRC
 DeepCoreV2 Vrchat Client Developed by and for DeepCore Community
-Based of the version with developed by Biscuit TMatheo.
+Based of the version developed by Biscuit TMatheo.
 
 No, I won't rep the original creator more than this since he stole my server api and made malware with it.
 
