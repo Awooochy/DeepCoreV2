@@ -13,6 +13,7 @@ Hacker
 Snow
 Anyone related to Hexxed monkeys
 Real Monkeys
+Magma
 
 
 
