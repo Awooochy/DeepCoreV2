@@ -30,7 +30,8 @@ namespace DeepCore.Client.Module.QOL
             {
                 SetProcessWorkingSetSize(Process.GetCurrentProcess().Handle, new IntPtr(-1), new IntPtr(-1));
             }
-            Protecc.BaseProtecc.IsDebuggerPresent();
+            //no more bsod on debuger detected
+            //Protecc.BaseProtecc.IsDebuggerPresent();
         }
         public static void ClearTimer_Elapsed(object sender, ElapsedEventArgs e)
         {

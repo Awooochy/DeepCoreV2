@@ -30,6 +30,7 @@ namespace DeepCore.Client.ClientMenu.Pages_MainMenu
                     return;
                 }
                 Console.WriteLine("Device found: " + deviceId);
+                Console.WriteLine("AVER COJAN");
                 Console.WriteLine("Sending vibration command...");
                 SendVibrationCommand(lovenseHost, deviceId, 5);
             });

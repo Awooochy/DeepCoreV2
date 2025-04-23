@@ -51,11 +51,6 @@ namespace DeepCore
         {
             try
             {
-                if (IsBot)
-                {
-                    Client.Module.ApplicationBot.SocketConnection.Client();
-                    DeepConsole.ChangeTittle($"DeepBot - Bot:{NumberBot} - Profile:{ProfileNumber}");
-                }
                 ConfManager.initConfig();
                 MelonPreferences.Load();
                 DeepConsole.Art(IsBot);
@@ -97,10 +92,6 @@ namespace DeepCore
         {
             if (IsLoaded)
             {
-                if (IsBot)
-                {
-                    Client.Module.ApplicationBot.Bot.OnUpdate();
-                }
                 Client.Module.Movement.UpdateModule.Update();
                 Client.Module.Visual.UpdateModule.OnUpdate();
                 Client.Module.QOL.KeyBindManager.OnUpdate();

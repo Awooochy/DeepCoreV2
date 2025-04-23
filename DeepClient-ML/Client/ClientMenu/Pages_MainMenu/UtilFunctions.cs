@@ -17,10 +17,6 @@ namespace DeepCore.Client.ClientMenu.Pages_MainMenu
             {
                 ClientUtils.SaveFrinds();
             });
-            category.AddButton("Russian Roulette", "Suka Blyat :3", delegate
-            {
-                Module.Funnies.RussianRoulette.RouletteStart();
-            });
             category.AddButton("Log Udon", "Allow you to log all udon in a TXT.", delegate
             {
                 ClientUtils.LogUdon();
@@ -47,7 +43,7 @@ namespace DeepCore.Client.ClientMenu.Pages_MainMenu
             },false);
             category.AddButton("Switch to DCAvatar", "Allow you to the client avi :fire:.", delegate
             {
-                VrcExtensions.ChangeAvatar("avtr_14c10067-2a13-4d6c-8e38-d4359813af5a");
+                VrcExtensions.ChangeAvatar("avtr_ecd43f05-2b66-466c-b1d8-9c74bc4fa2e8");
             });
         }
     }

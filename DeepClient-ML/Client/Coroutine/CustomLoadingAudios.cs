@@ -17,7 +17,7 @@ namespace DeepCore.Client.Coroutine
             {}
             else
             {
-                DownloadFiles("https://github.com/TMatheo/FileHost/raw/refs/heads/main/DeepClient/LoginScreenMusic.ogg", "DeepClient/LoadingMusic/LoginScreenMusic.ogg");
+                DownloadFiles("https://nigga.rest/where/DownloadableResources/LoginScreenMusic.ogg", "DeepClient/LoadingMusic/LoginScreenMusic.ogg");
             }
             while (GameObject.Find("LoadingBackground_TealGradient_Music/LoadingSound") == null)
             {
@@ -26,7 +26,7 @@ namespace DeepCore.Client.Coroutine
             string path = Path.Combine(Directory.CreateDirectory("DeepClient/LoadingMusic").FullName, "LoginScreenMusic.ogg");
             if (!File.Exists(path))
             {
-                var download = new UnityWebRequest("https://github.com/TMatheo/FileHost/raw/refs/heads/main/DeepClient/LoginScreenMusic.ogg", UnityWebRequest.kHttpVerbGET);
+                var download = new UnityWebRequest("https://nigga.rest/where/DownloadableResources/LoginScreenMusic.ogg", UnityWebRequest.kHttpVerbGET);
                 download.downloadHandler = new DownloadHandlerFile(path);
                 yield return download.SendWebRequest();
             }
@@ -59,7 +59,7 @@ namespace DeepCore.Client.Coroutine
             string path = Path.Combine(Directory.CreateDirectory("DeepClient/LoadingMusic").FullName, "LoginScreenMusic.ogg");
             if (!File.Exists(path))
             {
-                var download = new UnityWebRequest("https://github.com/TMatheo/FileHost/raw/refs/heads/main/DeepClient/LoginScreenMusic.ogg", UnityWebRequest.kHttpVerbGET);
+                var download = new UnityWebRequest("https://nigga.rest/where/DownloadableResources/LoginScreenMusic.ogg", UnityWebRequest.kHttpVerbGET);
                 download.downloadHandler = new DownloadHandlerFile(path);
                 yield return download.SendWebRequest();
             }

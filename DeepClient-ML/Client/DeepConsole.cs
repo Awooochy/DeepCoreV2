@@ -28,7 +28,7 @@ namespace DeepCore.Client
                 Console.SetOut(writer);
                 Console.SetError(writer);
                 Console.CursorVisible = false;
-                Console.Title = "DeepClient - v0.0.5 - Private";
+                Console.Title = "DeepCore - v2.0.1 - Private";
             }
         }
         public static void Log(string Name, string Content)
@@ -163,9 +163,9 @@ namespace DeepCore.Client
        /_______  /\___  >\___  >   __/|______  /\____/|__|  
                \/     \/     \/|__|          \/             
 
--    When the sun explodes, all I did will be for nothing~   -
- -                        Running v0.0.5                    -
-  -                https://discord.gg/SKhrH4C8K6           -
+-                   FIXING THIS WITH ALL MY WILL              -
+ -                        Running V2.0.1                     -
+  -             https://discord.gg/ GET SOME CONTACTS       -
 ");
             }
             else
@@ -180,9 +180,10 @@ ________                       _________ .__  .__               __
 /_______  /\___  >\___  >   __/ \______  /____/__|\___  >___|  /__|  
         \/     \/     \/|__|           \/             \/     \/      
 
--    When the sun explodes, all I did will be for nothing~    -
- -                        Running v0.0.5                     -
-  -                https://discord.gg/SKhrH4C8K6            -
+-                   FIXING THIS WITH ALL MY WILL              -
+ -                        Running V2.0.1                     -
+  -             https://discord.gg/ GET SOME CONTACTS       -
+   -                          Awooochy                     -
 ");
             }
         }

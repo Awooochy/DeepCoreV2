@@ -35,7 +35,7 @@ namespace DeepCore.Client.Module.RPC
                 VrcExtensions.AlertPopup("RPC | ALERT", "You can't send nothing!", 10);
                 return;
             }
-            Networking.RPC(0, OnLoadedScaneManager.funnyrpcobj, extractedValue, new Il2CppReferenceArray<Il2CppSystem.Object>(0L));
+            Networking.RPC(0, OnLoadedScaneManager.DeepCoreRpcObject, extractedValue, new Il2CppReferenceArray<Il2CppSystem.Object>(0L));
         }
     }
 }

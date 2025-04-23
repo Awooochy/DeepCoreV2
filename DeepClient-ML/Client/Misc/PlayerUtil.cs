@@ -460,7 +460,7 @@ namespace DeepCore.Client.Misc
         }
         public static Player GetPlayer(this PlayerManager Instance, int Index)
         {
-            return Instance.AllPlayers()[Index];
+            return Instance.AllPlayers().ToArray()[Index];
         }
         public static Player GetPlayerWithPlayerID(this PlayerManager Instance, int playerID)
         {

@@ -40,7 +40,7 @@ namespace DeepCore.Client.Module
         internal static Il2CppArrayBase<OnRenderObjectProxy> udonOnRender;
         internal static Il2CppArrayBase<VRCUdonAnalytics> allSDKUdon;
         private static readonly string[] toSkip = new string[] { "PhotoCamera", "MirrorPickup", "ViewFinder", "AvatarDebugConsole", "OscDebugConsole" };
-        internal static GameObject funnyrpcobj;
+        internal static GameObject DeepCoreRpcObject;
         public static void LoadedScene(int buildindex, string sceneName)
         {
             if (sceneName == "Murder Nevermore")
@@ -55,7 +55,7 @@ namespace DeepCore.Client.Module
             {
                 yield return null;
             }
-            funnyrpcobj = new GameObject("deepclientrpcsht");
+            DeepCoreRpcObject = new GameObject("[DO NOT TOUCH] DeepClientRPC");
             allTriggers = Resources.FindObjectsOfTypeAll<global::VRC.SDKBase.VRC_Trigger>();
             allSDK2Triggers = Resources.FindObjectsOfTypeAll<global::VRCSDK2.VRC_Trigger>();
             allTriggerCol = Resources.FindObjectsOfTypeAll<global::VRC.SDKBase.VRC_TriggerColliderEventTrigger>();
@@ -85,23 +85,23 @@ namespace DeepCore.Client.Module
                 highlightsFX = Enumerable.FirstOrDefault<HighlightsFXStandalone>(Resources.FindObjectsOfTypeAll<HighlightsFXStandalone>());
             }
             DeepConsole.DebugLog($@"
-Total VRC_Trigger:{allTriggers.Count}
-Total VRCPickup:{sdk3Items.Count}
-Total VRC_TriggerColliderEventTrigger:{allTriggerCol.Count}
-Total VRCInteractable:{allInteractable.Count}
-Total VRC_ObjectSync:{allSyncItems.ToList().Count}
-Total UdonBehaviour:{udonBehaviours.ToList().Count}
-Total VRCObjectSync:{allSDK3SyncItems.Count}
-Total VRCObjectPool:{allPoolItems.Count}
-Total BaseUdonItem:{allBaseUdonItem.ToList().Count}
-Total UdonSync:{udonSync.Count}
-Total UdonManager:{udonManagers.Count}
-Total OnTriggerStayProxy:{udonOnTrigger.Count}
-Total OnCollisionStayProxy:{udonOnCol.Count}
-Total VRCUdonAnalytics:{allSDK3SyncItems.Count}
-Total (SDK2) VRC_Trigger:{allSDK2Triggers.Count}
-Total (SDK2) VRC_Interactable:{allSDK2Interactable.Count}
-Total (SDK2) VRC_Pickup:{sdk2Items.Count}");
+                Total VRC_Trigger:{allTriggers.Count}
+                Total VRCPickup:{sdk3Items.Count}
+                Total VRC_TriggerColliderEventTrigger:{allTriggerCol.Count}
+                Total VRCInteractable:{allInteractable.Count}
+                Total VRC_ObjectSync:{allSyncItems.ToList().Count}
+                Total UdonBehaviour:{udonBehaviours.ToList().Count}
+                Total VRCObjectSync:{allSDK3SyncItems.Count}
+                Total VRCObjectPool:{allPoolItems.Count}
+                Total BaseUdonItem:{allBaseUdonItem.ToList().Count}
+                Total UdonSync:{udonSync.Count}
+                Total UdonManager:{udonManagers.Count}
+                Total OnTriggerStayProxy:{udonOnTrigger.Count}
+                Total OnCollisionStayProxy:{udonOnCol.Count}
+                Total VRCUdonAnalytics:{allSDK3SyncItems.Count}
+                Total (SDK2) VRC_Trigger:{allSDK2Triggers.Count}
+                Total (SDK2) VRC_Interactable:{allSDK2Interactable.Count}
+                Total (SDK2) VRC_Pickup:{sdk2Items.Count}");
             VrcExtensions.Toast("DeepClient - World","Loaded everything i need. >:3");
         }
     }

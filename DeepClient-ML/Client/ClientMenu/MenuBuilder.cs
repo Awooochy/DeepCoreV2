@@ -8,7 +8,7 @@ namespace DeepCore.Client.ClientMenu
         internal static void MenuStart()
         {
             DeepConsole.Log("ClientUI","Initializing UI...");
-            _uiManager = new UiManager("DeepClient",Misc.SpriteManager.clientIcon, true, true);
+            _uiManager = new UiManager("DeepCoreV2",Misc.SpriteManager.clientIcon, true, true);
             LaunchPad_Menu.InitLaunchPadMenu(_uiManager);
             Target_Menu.InitMainMenu(_uiManager);
             Main_Menu.InitMainMenu(_uiManager);

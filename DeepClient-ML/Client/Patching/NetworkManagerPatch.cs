@@ -2,6 +2,7 @@
 using DeepCore.Client.Mono;
 using UnityEngine.Events;
 using VRC;
+using VRC.A.Core;
 using VRC.Core;
 
 namespace DeepCore.Client.Patching

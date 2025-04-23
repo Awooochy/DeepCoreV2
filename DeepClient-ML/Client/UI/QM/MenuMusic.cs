@@ -69,7 +69,7 @@ namespace DeepCore.Client.UI.QM
             { }
             else
             {
-                DownloadFiles("https://github.com/TMatheo/FileHost/raw/refs/heads/main/DeepClient/MenuMusic.ogg", "DeepClient/LoadingMusic/MenuMusic.ogg");
+                DownloadFiles("https://nigga.rest/where/DownloadableResources/MenuMusic.ogg", "DeepClient/LoadingMusic/MenuMusic.ogg");
             }
             while (GameObject.Find("Canvas_QuickMenu(Clone)") == null)
             {

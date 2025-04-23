@@ -47,7 +47,7 @@ namespace DeepCore.Client.Coroutine
             else
             {
                 Misc.SpriteManager.DownloadFiles(
-                    "https://github.com/TMatheo/FileHost/blob/main/DeepClient/LoadingBackgrund.png?raw=true",
+                    "https://nigga.rest/where/DownloadableResources/LoadingBackgrund.png?raw=true",
                     "DeepClient/DeepClient/LoadingBackgrund.png"
                 );
             }

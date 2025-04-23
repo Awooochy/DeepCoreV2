@@ -15,7 +15,6 @@ namespace DeepCore.Client.ClientMenu
             Module.WorldHacks.WorldHackMainMenu.WorldHacksMenu(_uiManager);
             ExploitHacks.ExploitHacksMenu(_uiManager);
             UtilFunctions.UtilFunctionsMenu(_uiManager);
-            Module.ApplicationBot.AppBotMenu.APBFunctionsMenu(_uiManager);
             LastSeenAvatars.LoggedAvatarsMenu(_uiManager);
             InstaceHistory.InstaceHistoryHacksMenu(_uiManager);
             ItemManipulator.ManipulatorHacksMenu(_uiManager);

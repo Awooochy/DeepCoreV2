@@ -12,7 +12,7 @@ namespace DeepCore.Client.Misc
         internal static void HandleInternalFailure(string message,bool shouldclose)
         {
             SystemSounds.Asterisk.Play();
-            const string errorTitle = "DeepClient - INTERNAL FAILURE!";
+            const string errorTitle = "DeepCoreV2 - INTERNAL FAILURE!";
             IntPtr messageBoxResult = MessageBox(0, message, errorTitle, 0);
             while (shouldclose)
             {

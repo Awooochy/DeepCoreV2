@@ -87,6 +87,8 @@ Version:{player.field_Private_ApiAvatar_0.version}
                 }
             }
         }
+        
+        //Teleports the local player to remote players
         public static void TpToPlayer(VRCPlayer player)
         {
             if (Networking.LocalPlayer != null)
@@ -175,12 +177,16 @@ Version:{player.field_Private_ApiAvatar_0.version}
             NewUser,
             User,
             Known,
-            Trusted
+            Trusted,
+            Developer
         }
         public static TrustRanks GetTrustRank(this APIUser apiUser)
         {
             if (apiUser.tags.Count > 0)
             {
+                if (apiUser.tags.Contains("system_trust_developer") && apiUser.tags.Contains("system_trust_dev"))
+                    return TrustRanks.Developer;
+                
                 if (apiUser.tags.Contains("system_trust_veteran") && apiUser.tags.Contains("system_trust_trusted"))
                     return TrustRanks.Trusted;
 
@@ -223,6 +229,8 @@ Version:{player.field_Private_ApiAvatar_0.version}
                     return new Color(252f / 255f, 120f / 255f, 65f / 255f);
                 case TrustRanks.Trusted:
                     return new Color(119f / 255f, 62f / 255f, 216f / 255f);
+                case TrustRanks.Developer:
+                    return Color.red;
             }
             return Color.white;
         }
