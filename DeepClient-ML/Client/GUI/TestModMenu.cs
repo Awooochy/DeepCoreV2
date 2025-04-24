@@ -18,8 +18,8 @@ namespace DeepCore.Client.GUI
         public KeyCode upKeyBind = KeyCode.UpArrow;
         public KeyCode downKeyBind = KeyCode.DownArrow;
         public bool logMenuStateChanged = true;
-        public string menuTitleText = "<size=35><b><color=red>DeepClient</color></b></size>";
-        public string subTitleText = "<size=25><b><color=#7d0000>by LXQtie</color></b></size>";
+        public string menuTitleText = "<size=35><b><color=red>DeepCoreV2</color></b></size>";
+        public string subTitleText = "<size=25><b><color=#7d0000>by Awooochy</color></b></size>";
         public string highlightedOptionHex = "#7d0000";
 
         // Don't Change

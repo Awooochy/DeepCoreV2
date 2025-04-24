@@ -278,7 +278,7 @@ namespace DeepCore.Client.Misc
             catch (Exception ex)
             {
                 DeepConsole.Log("UdonDBLR", $"Error in UdonDisassembler.");
-                DeepConsole.E(ex);
+                DeepConsole.LogException(ex);
                 throw;
             }
         }

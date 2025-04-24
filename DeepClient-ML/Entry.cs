@@ -6,6 +6,8 @@ using System.Linq;
 using UnityEngine;
 using System.Diagnostics;
 using DeepCore.ServerAPI;
+using DeepCore.Client.Misc;
+using DeepCore.Client.GUI;
 
 namespace DeepCore
 {
@@ -23,58 +25,56 @@ namespace DeepCore
         {
             DeepConsole.Alloc();
             var args = Environment.GetCommandLineArgs().ToList();
-            foreach (string text in args)
-            {   
-                if (text.Contains("DCDaddyUwU"))
-                {
-                    IsBot = true;
-                    Application.targetFrameRate = 10;
-                }
-                else if (text.StartsWith("--Number="))
-                {
-                    NumberBot = text.Replace("--Number=", "");
-                }
-                else if (text.StartsWith("--profile="))
-                {
-                    ProfileNumber = text.Replace("--profile=", "").ToLower();
-                }
-            }
+            
+            //Lets make it Priority High for it to work better.
             try
             {
                 Process.GetCurrentProcess().PriorityClass = ProcessPriorityClass.High;
             }
             catch (Exception ex)
             {}
+            //here we start the client
+
+            AuthAPI API = new AuthAPI();
+            API.Auth();
             StartClient();
         }
+
         public static void StartClient()
         {
             try
             {
                 ConfManager.initConfig();
                 MelonPreferences.Load();
-                DeepConsole.Art(IsBot);
+                DeepConsole.Art();
                 DeepConsole.Log("Startup", "Starting Client...");
+                
+                // Initialize all systems
                 Client.Patching.Initpatches.Start();
                 Injectories();
                 QOLThings();
                 Client.Coroutine.CoroutineManager.Init();
-                Client.Misc.SpriteManager.LoadSprite();
+                
+                // Updated sprite loading call
+                SpriteManager.LoadAllSprites(); // Changed from LoadSprite() to LoadAllSprites()
+                
                 DeepConsole.Log("Startup", "Waiting for QM...");
                 MelonCoroutines.Start(Client.UI.UIController.WaitForQM());
                 IsLoaded = true;
             }
             catch (Exception ex)
             {
-                DeepConsole.E(ex);
-                Client.Misc.WMessageBox.HandleInternalFailure($"Client Startup failed: {ex.Message}",true);
+                DeepConsole.LogException(ex);
+                Client.Misc.WMessageBox.HandleInternalFailure($"Client Startup failed: {ex.Message}", true);
             }
         }
+
         protected static void Injectories()
         {
             DeepConsole.Log("Startup", "Starting Injectories...");
             ClassInjector.RegisterTypeInIl2Cpp<Client.Mono.CustomNameplate>();
         }
+
         protected static void QOLThings()
         {
             DeepConsole.Log("Startup", "Starting QOLThings...");
@@ -83,11 +83,13 @@ namespace DeepCore
             Client.Module.QOL.RamCleaner.StartMyCleaner();
             Client.Misc.Binds.Register();
             MelonCoroutines.Start(Client.Patching.GameVersionSpoofer.Init());
+            
             if (ConfManager.BLSEnabled.Value)
             {
                 Client.Module.QOL.OldLoadingScreenMod.OnApplicationStart();
             }
         }
+
         public override void OnUpdate()
         {
             if (IsLoaded)
@@ -100,14 +102,17 @@ namespace DeepCore
                 Client.Module.QOL.ThirdPersonView.Update();
             }
         }
+
         public override void OnGUI()
         {
             Client.GUI.UpdateModule.UpdateGUI();
         }
+
         public override void OnSceneWasLoaded(int buildindex, string sceneName)
         {
             Client.Module.OnLoadedScaneManager.LoadedScene(buildindex, sceneName);
         }
+
         public override void OnApplicationQuit()
         {
             MelonPreferences.Save();

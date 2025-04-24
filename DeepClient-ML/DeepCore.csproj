@@ -47,7 +47,7 @@
     <Compile Include="Client\GUI\LineESP.cs" />
     <Compile Include="Client\GUI\TestModMenu.cs" />
     <Compile Include="Client\GUI\UpdateModule.cs" />
-    <Compile Include="Client\Misc\AvatarToModele.cs" />
+    <Compile Include="Client\Misc\AvatarExtensions.cs" />
     <Compile Include="Client\Misc\Binds.cs" />
     <Compile Include="Client\Misc\ERPChecker.cs" />
     <Compile Include="Client\Misc\MediaKeys.cs" />
@@ -187,6 +187,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entry.cs" />
     <Compile Include="ServerAPI\AuthAPI.cs" />
+    <Compile Include="ServerAPI\ClientResourceManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="0Harmony">

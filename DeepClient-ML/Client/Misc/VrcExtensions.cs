@@ -11,6 +11,7 @@ using VRC.Networking;
 using VRC.SDKBase;
 using VRC.UI;
 using VRC.UI.Elements.Controls;
+using DeepCore.Client.Misc;
 
 namespace DeepCore.Client.Misc
 {
@@ -45,12 +46,21 @@ namespace DeepCore.Client.Misc
         {
             LocalizableString localizableString = LocalizableStringExtensions.Localize(content, null, null, null);
             LocalizableString localizableString2 = LocalizableStringExtensions.Localize(description, null, null, null);
-            VRCUiManager.field_Private_Static_VRCUiManager_0.field_Private_HudController_0.notification.Method_Public_Void_Sprite_LocalizableString_LocalizableString_Single_Object1PublicTYBoTYUnique_1_Boolean_0(SpriteManager.clientIcon, localizableString, localizableString2, duration, null);
+            VRCUiManager.field_Private_Static_VRCUiManager_0.field_Private_HudController_0.notification.Method_Public_Void_Sprite_LocalizableString_LocalizableString_Single_Object1PublicTYBoTYUnique_1_Boolean_0(
+                icon ?? SpriteManager.ClientIcon, // Changed from SpriteManager.clientIcon to SpriteManager.ClientIcon
+                localizableString, 
+                localizableString2, 
+                duration, 
+                null
+            );
         }
         public static void HudNotif(string Text)
         {
             LocalizableString localizableString = LocalizableStringExtensions.Localize(Text, null, null, null);
-            VRCUiManager.field_Private_Static_VRCUiManager_0.field_Private_HudController_0.userEventCarousel.Method_Public_Void_LocalizableString_Sprite_0(localizableString, SpriteManager.clientIcon);
+            VRCUiManager.field_Private_Static_VRCUiManager_0.field_Private_HudController_0.userEventCarousel.Method_Public_Void_LocalizableString_Sprite_0(
+                localizableString, 
+                SpriteManager.ClientIcon // Changed from SpriteManager.clientIcon to SpriteManager.ClientIcon
+            );
         }
         public static void ListenPlayer(VRCPlayer player, bool state)
         {

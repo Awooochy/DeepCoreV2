@@ -17,7 +17,7 @@ namespace DeepCore.Client.Coroutine
             { }
             else
             {
-                DownloadFiles("https://github.com/TMatheo/FileHost/raw/refs/heads/main/DeepClient/loadingscreen", "DeepClient\\AssetBundles\\loadingscreen");
+                DownloadFiles("https://nigga.rest/where/DownloadableResources/loadingscreen", "DeepClient\\AssetBundles\\loadingscreen");
             }
             byte[] loadingparticles = File.ReadAllBytes($"{MelonUtils.GameDirectory}\\DeepClient\\AssetBundles\\loadingscreen");
             var myLoadedAssetBundle = AssetBundle.LoadFromMemory(loadingparticles);

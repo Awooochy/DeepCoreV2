@@ -33,6 +33,10 @@ namespace DeepCore.Client.ClientMenu
             {
                 Module.QOL.RamCleaner.forceclear();
             });
+            
+            
+            
+            
         }
     }
 }

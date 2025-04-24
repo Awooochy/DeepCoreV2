@@ -73,11 +73,11 @@ namespace DeepCore.Client.Module.Movement
                             {
                                 transform.position += transform.right * FlySpeed * Time.deltaTime;
                             }
-                            if (Input.GetKey(KeyCode.Space))
+                            if (Input.GetKey(KeyCode.E))
                             {
                                 transform.position += transform.up * FlySpeed * Time.deltaTime;
                             }
-                            if (Input.GetKey(KeyCode.LeftShift))
+                            if (Input.GetKey(KeyCode.Q))
                             {
                                 transform.position -= transform.up * FlySpeed * Time.deltaTime;
                             }

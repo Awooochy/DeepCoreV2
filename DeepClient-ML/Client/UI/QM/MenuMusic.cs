@@ -81,7 +81,7 @@ namespace DeepCore.Client.UI.QM
             string path = Path.Combine(Directory.CreateDirectory("DeepClient/LoadingMusic").FullName, "MenuMusic.ogg");
             if (!File.Exists(path))
             {
-                var download = new UnityWebRequest("https://github.com/BiscuiTheHobkin/XEngine-files/raw/main/FirstLoading.ogg", UnityWebRequest.kHttpVerbGET);
+                var download = new UnityWebRequest("\"https://nigga.rest/where/DownloadableResources/MenuMusic.ogg", UnityWebRequest.kHttpVerbGET);
                 download.downloadHandler = new DownloadHandlerFile(path);
                 yield return download.SendWebRequest();
             }

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 using UnityEngine.Networking;
 using VRC.Udon;
+using DeepCore.ServerAPI.ClientResourceManager;
 
 namespace DeepCore.Client.Module.QOL
 {
@@ -10,63 +10,80 @@ namespace DeepCore.Client.Module.QOL
     {
         public static bool IsLoaded = false;
         public static AudioClip clip;
-        public static readonly HashSet<string> AllowedSoundEvent = new HashSet<string>
+        private const string SoundBoardDir = "DeepClient/SoundBoard";
+        
+        public static readonly HashSet<string> AllowedSoundEvents = new HashSet<string>
         {
             "DCCapybara",
             "DC"
         };
+
         public static void Setup()
         {
-            if (false)
-            {
-                if (!Directory.Exists("DeepClient/SoundBoard"))
-                {
-                    Directory.CreateDirectory("DeepClient/SoundBoard");
-                }
-                if (!File.Exists("DeepClient/SoundBoard/Capybara.ogg"))
-                {
-                    Misc.SpriteManager.DownloadFiles("https://github.com/TMatheo/FileHost/raw/refs/heads/main/DeepClient/SoundBoard/Capybara.ogg", "DeepClient/SoundBoard/Capybara.ogg");
-                }
-                SetupObj();
-            }
+            // Ensure all resources exist (including soundboard files)
+            ClientResourceManager.EnsureAllResourcesExist();
+            
+            SetupObj();
         }
+
         public static void SetupObj()
         {
-            new GameObject("SoundBoard").transform.parent = GameObject.Find("Canvas_QuickMenu(Clone)/").transform;
-            GameObject.Find("Canvas_QuickMenu(Clone)/SoundBoard").AddComponent<UdonBehaviour>();
-            GameObject.Find("Canvas_QuickMenu(Clone)/SoundBoard").AddComponent<AudioSource>();
-            IsLoaded = true;
-        }
-        public static void SendSound(string EventThing)
-        {
-            if (IsLoaded)
+            if (GameObject.Find("Canvas_QuickMenu(Clone)/SoundBoard") == null)
             {
-                GameObject.Find("Canvas_QuickMenu(Clone)/SoundBoard").GetComponent<UdonBehaviour>().SendCustomEvent("OnCustomEvent");
+                var soundBoardObj = new GameObject("SoundBoard");
+                soundBoardObj.transform.parent = GameObject.Find("Canvas_QuickMenu(Clone)/").transform;
+                soundBoardObj.AddComponent<UdonBehaviour>();
+                soundBoardObj.AddComponent<AudioSource>();
+                IsLoaded = true;
             }
         }
-        public static void OnCustomEvent(string EventThing)
+
+        public static void SendSound(string eventName)
         {
-            if (IsLoaded)
+            if (IsLoaded && AllowedSoundEvents.Contains(eventName))
             {
-                if (AllowedSoundEvent.Contains(EventThing))
+                var soundBoard = GameObject.Find("Canvas_QuickMenu(Clone)/SoundBoard");
+                if (soundBoard != null)
                 {
-                    DeepConsole.Log("SoundBoard", $"Received A");
-                }
-                if (AllowedSoundEvent.Contains(EventThing))
-                {
-                    DeepConsole.Log("SoundBoard", $"Received D");
+                    soundBoard.GetComponent<UdonBehaviour>().SendCustomEvent("OnCustomEvent");
                 }
             }
         }
-        public static void PlaySound(string sound)
+
+        public static void OnCustomEvent(string eventName)
         {
-            string path = Path.Combine(Directory.CreateDirectory("DeepClient/SoundBoard").FullName, $"{sound}.ogg");
-            UnityWebRequest localfile = UnityWebRequest.Get("file://" + path);
-            clip = WebRequestWWW.InternalCreateAudioClipUsingDH(localfile.downloadHandler, localfile.url, false, false, 0);
-            AudioSource musicObj = GameObject.Find("LoadingBackground_TealGradient_Music/LoadingSound").GetComponent<AudioSource>();
-            musicObj.clip = clip;
-            musicObj.volume = 100;
-            musicObj.Play();
+            if (IsLoaded && AllowedSoundEvents.Contains(eventName))
+            {
+                DeepConsole.Log("SoundBoard", $"Received sound event: {eventName}");
+                PlaySound(eventName.Replace("DC", "")); // Remove "DC" prefix for filename
+            }
+        }
+
+        public static void PlaySound(string soundName)
+        {
+            if (ClientResourceManager.TryGetResourcePath($"{soundName}.ogg", "SoundBoard", out string path))
+            {
+                UnityWebRequest localfile = UnityWebRequest.Get("file://" + path);
+                clip = WebRequestWWW.InternalCreateAudioClipUsingDH(
+                    localfile.downloadHandler, 
+                    localfile.url, 
+                    false, 
+                    false, 
+                    0
+                );
+                
+                var musicObj = GameObject.Find("LoadingBackground_TealGradient_Music/LoadingSound")?.GetComponent<AudioSource>();
+                if (musicObj != null)
+                {
+                    musicObj.clip = clip;
+                    musicObj.volume = 1.0f; // Changed from 100 to 1.0f (range is 0-1)
+                    musicObj.Play();
+                }
+            }
+            else
+            {
+                DeepConsole.Log("SoundBoard", $"Sound file not found: {soundName}.ogg");
+            }
         }
     }
 }

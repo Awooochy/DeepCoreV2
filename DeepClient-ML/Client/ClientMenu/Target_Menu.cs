@@ -2,6 +2,8 @@
 using DeepCore.Client.Misc;
 using ReMod.Core.Managers;
 using ReMod.Core.UI.QuickMenu;
+using DeepCore.Client.Misc; // For AvatarExtensions
+using VRC; // For VRC.Player
 
 namespace DeepCore.Client.ClientMenu
 {
@@ -36,6 +38,29 @@ namespace DeepCore.Client.ClientMenu
             {
                 VrcExtensions.LogAvatar(ReMod.Core.VRChat.PlayerExtensions.GetVRCPlayer());
             });
+            
+            UserInfo.AddButton("Convert to pickup", "Converts the target avatar into a local pickup", delegate
+            {
+                var selectedPlayer = ReMod.Core.VRChat.PlayerExtensions.GetVRCPlayer();
+                if (selectedPlayer != null)
+                {
+                    selectedPlayer._player.CloneAvatar(); // Using the extension method
+                    VrcExtensions.Toast("DeepClient", $"Created pickup of {selectedPlayer._player.field_Private_APIUser_0.displayName}'s avatar");
+                }
+                else
+                {
+                    VrcExtensions.Toast("DeepClient", "No player selected!");
+                }
+            });
+            
+            UserInfo.AddButton("Delete all clones", "Removes all avatar pickups you created", delegate
+            {
+                int count = AvatarExtensions.AllClones.Count;
+                AvatarExtensions.CleanupAllClones();
+                VrcExtensions.Toast("DeepClient", $"Deleted {count} avatar clones");
+            });
+            
+            
             #endregion
             #region User Exploits
             reCategory.AddCategory("User Exploits");
@@ -55,7 +80,7 @@ namespace DeepCore.Client.ClientMenu
                 var a = ReMod.Core.VRChat.PlayerExtensions.GetVRCPlayer();
                 VrcExtensions.ChangeAvatar(a.field_Private_ApiAvatar_0.id);
             });
-            UserExploits.AddButton("Force lewd", "...", delegate
+            UserExploits.AddButton("Force lewd", "Hoy voy a enseñar mis dos huevos y pene en directo", delegate
             {
                 var a = ReMod.Core.VRChat.PlayerExtensions.GetVRCPlayer();
                 Module.Exploits.ForceLewd.LewdPlayer(a);

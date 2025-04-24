@@ -22,8 +22,8 @@ namespace DeepCore.Client.UI.QM
                 MelonCoroutines.Start(MenuMusic.MenuMusicInit());
             }
             DeepConsole.Log("Startup", $"Welcome Back, {APIUser.CurrentUser.displayName}.");
-            VrcExtensions.Toast("DeepClient",$"Welcome Back, {APIUser.CurrentUser.displayName}.");
-            VrcExtensions.HudNotif("Why i'm still fixing it ?...");
+            VrcExtensions.Toast("DeepCore V2",$"Welcome Back, {APIUser.CurrentUser.displayName}.");
+            VrcExtensions.HudNotif("All systems online. (I hope so)");
         }
     }
 }

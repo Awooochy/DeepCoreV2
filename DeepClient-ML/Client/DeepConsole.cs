@@ -45,10 +45,6 @@ namespace DeepCore.Client
             {
                 Console.ForegroundColor = ConsoleColor.Red;
             }
-            else if (Name.StartsWith("Bot", StringComparison.OrdinalIgnoreCase))
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-            }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -73,10 +69,6 @@ namespace DeepCore.Client
             {
                 Console.ForegroundColor = ConsoleColor.Red;
             }
-            else if (Name.StartsWith("Bot", StringComparison.OrdinalIgnoreCase))
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-            }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -86,7 +78,7 @@ namespace DeepCore.Client
             Console.Write($"] {Content}\n");
             Console.ResetColor();
         }
-        public static void E(Exception ex)
+        public static void LogException(Exception ex)
         {
             DateTime now = DateTime.Now;
             Console.ResetColor();
@@ -149,42 +141,24 @@ namespace DeepCore.Client
         {
             Console.Title = Name;
         }
-        public static void Art(bool s)
+        public static void Art()
         {
-            if (s)
             {
                 Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($@"
-       ________                      __________        __   
-       \______ \   ____   ____ ______\______   \ _____/  |_ 
-       |    |  \_/ __ \_/ __ \\____ \|    |  _//  _ \   __\
-       |    `   \  ___/\  ___/|  |_> >    |   (  <_> )  |  
-       /_______  /\___  >\___  >   __/|______  /\____/|__|  
-               \/     \/     \/|__|          \/             
-
--                   FIXING THIS WITH ALL MY WILL              -
- -                        Running V2.0.1                     -
-  -             https://discord.gg/ GET SOME CONTACTS       -
-");
-            }
-            else
-            {
-                Console.Clear();
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine($@"
-________                       _________ .__  .__               __   
-\______ \   ____   ____ ______ \_   ___ \|  | |__| ____   _____/  |_ 
- |    |  \_/ __ \_/ __ \\____ \/    \  \/|  | |  |/ __ \ /    \   __\
- |    `   \  ___/\  ___/|  |_> >     \___|  |_|  \  ___/|   |  \  |  
-/_______  /\___  >\___  >   __/ \______  /____/__|\___  >___|  /__|  
-        \/     \/     \/|__|           \/             \/     \/      
-
--                   FIXING THIS WITH ALL MY WILL              -
- -                        Running V2.0.1                     -
-  -             https://discord.gg/ GET SOME CONTACTS       -
-   -                          Awooochy                     -
-");
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                System.Console.WriteLine(":::::::-.  .,::::::  .,::::::  ::::::::::.       .,-:::::      ...     :::::::..   .,::::::  ");
+                System.Console.WriteLine(" ;;,   `';,;;;;''''  ;;;;''''   `;;;```.;;;    ,;;;'````'   .;;;;;;;.  ;;;;``;;;;  ;;;;''''  ");
+                System.Console.WriteLine(" `[[     [[ [[cccc    [[cccc     `]]nnn]]'     [[[         ,[[     |[[, [[[,/[[['   [[cccc   ");
+                System.Console.WriteLine("  $$,    $$ $$^^^^    $$^^^^      $$$^^        $$$         $$$,     $$$ $$$$$$c     $$^^^^   ");
+                System.Console.WriteLine("  888_,o8P' 888oo,__  888oo,__    888o         `88bo,__,o, ^888,_ _,88P 888b ^88bo, 888oo,__ ");
+                System.Console.WriteLine("  MMMMP^    MMMMMMMMM MMMMYUMMM   YMMMb          \\YUMMMMMP  ^YMMMMMP^  MMMM   ^WMA MMMMYUMMM");
+                System.Console.WriteLine("                                    :::      .::.  .:::.                                     ");
+                System.Console.WriteLine("                                    ';;,   ,;;;'  ,;'``;.                                    ");
+                System.Console.WriteLine("                                     |[[  .[[/    ''  ,[['                                   ");
+                System.Console.WriteLine("                                      Y$c.$$\"     .c$$P'                                    ");
+                System.Console.WriteLine("                                       Y88P      d88^   ,o,                                  ");
+                System.Console.WriteLine("                                        MP       MMMUP*\"MMM,                                ");
+                System.Console.WriteLine("---------------------------------------------------------------------------------------------");
             }
         }
     }

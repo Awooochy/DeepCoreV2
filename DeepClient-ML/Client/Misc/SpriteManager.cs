@@ -1,67 +1,70 @@
 ﻿using System;
-using System.IO;
-using System.Net;
 using UnityEngine;
+using DeepCore.ServerAPI.ClientResourceManager;
 
 namespace DeepCore.Client.Misc
 {
-    internal class SpriteManager
+    internal static class SpriteManager
     {
-        public static Sprite clientIcon;
-        public static void LoadSprite()
+        public static Sprite ClientIcon { get; private set; }
+        public static Sprite LoadingBackground { get; private set; }
+        public static Sprite MainMenuBackground { get; private set; }
+        public static Sprite QuickMenuBackground { get; private set; }
+
+        public static void LoadAllSprites()
         {
-            if (File.Exists("DeepClient/ClientIcon.png"))
+            try
             {
-                clientIcon = ReMod.Core.Managers.ResourceManager.LoadSpriteFromDisk("DeepClient\\ClientIcon.png");
+                // Ensure all resources are available
+                ClientResourceManager.EnsureAllResourcesExist();
+                
+                // Load each sprite with proper error handling
+                ClientIcon = LoadSprite("ClientIcon.png");
+                LoadingBackground = LoadSprite("LoadingBackgrund.png"); // Note: Typo consistent with file name
+                MainMenuBackground = LoadSprite("MMBG.png");
+                QuickMenuBackground = LoadSprite("QMBG.png");
+
+                // Verify all sprites loaded
+                if (ClientIcon == null || LoadingBackground == null)
+                {
+                    DeepConsole.Log("SpriteManager", "Failed to load one or more sprites");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                DeepConsole.Log("SpriteManager", $"File not found: {"DeepClient/ClientIcon.png"}, Downloading...");
-                DownloadFiles("https://github.com/TMatheo/FileHost/blob/main/DeepClient/ClientIcon.png?raw=true", "DeepClient/ClientIcon.png");
-                clientIcon = ReMod.Core.Managers.ResourceManager.LoadSpriteFromDisk("DeepClient/ClientIcon.png");
-            }
-            if (File.Exists("DeepClient/LoadingBackgrund.png"))
-            {
-            }
-            else
-            {
-                DeepConsole.Log("SpriteManager", $"File not found: {"DeepClient/LoadingBackgrund.png"}, Downloading...");
-                DownloadFiles("https://github.com/TMatheo/FileHost/blob/main/DeepClient/LoadingBackgrund.png?raw=true", "DeepClient/LoadingBackgrund.png");
-            }
-            if (File.Exists("DeepClient/MMBG.png"))
-            {
-            }
-            else
-            {
-                DeepConsole.Log("SpriteManager", $"File not found: {"DeepClient/MMBG.png"}, Downloading...");
-                DownloadFiles("https://github.com/TMatheo/FileHost/blob/main/DeepClient/MMBG.png?raw=true", "DeepClient/MMBG.png");
-            }
-            if (File.Exists("DeepClient/QMBG.png"))
-            {
-            }
-            else
-            {
-                DeepConsole.Log("SpriteManager", $"File not found: {"DeepClient/QMBG.png"}, Downloading...");
-                DownloadFiles("https://github.com/TMatheo/FileHost/blob/main/DeepClient/QMBG.png?raw=true", "DeepClient/QMBG.png");
+                DeepConsole.Log("SpriteManager", $"Fatal error during sprite loading: {ex.Message}");
             }
         }
-        public static byte[] DownloadFiles(string downloadUrl, string savePath)
+
+        private static Sprite LoadSprite(string fileName)
         {
-            byte[] result = null;
-            using (WebClient webClient = new WebClient())
+            try
             {
-                try
+                if (ClientResourceManager.TryGetResourcePath(fileName, "", out string filePath))
                 {
-                    result = webClient.DownloadData(downloadUrl);
-                    File.WriteAllBytes(savePath, result);
-                    DeepConsole.Log("SpriteManager", $"Downloaded: {savePath}");
+                    var sprite = ReMod.Core.Managers.ResourceManager.LoadSpriteFromDisk(filePath);
+                    if (sprite == null)
+                    {
+                        DeepConsole.Log("SpriteManager", $"Loaded null sprite from: {filePath}");
+                    }
+                    return sprite;
                 }
-                catch (Exception ex)
-                {
-                    DeepConsole.Log("SpriteManager", $"An error occurred while downloading: {ex}");
-                }
+
+                DeepConsole.Log("SpriteManager", $"Sprite file not found: {fileName}");
+                return null;
             }
-            return result;
+            catch (Exception ex)
+            {
+                DeepConsole.Log("SpriteManager", 
+                    $"Error loading sprite {fileName}: {ex.Message}");
+                return null;
+            }
+        }
+
+        public static void ReloadSprites()
+        {
+            DeepConsole.Log("SpriteManager", "Reloading all sprites...");
+            LoadAllSprites();
         }
     }
 }

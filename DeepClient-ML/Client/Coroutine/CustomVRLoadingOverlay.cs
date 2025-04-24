@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
+using DeepCore.ServerAPI.ClientResourceManager;
 
 namespace DeepCore.Client.Coroutine
 {
@@ -46,10 +48,17 @@ namespace DeepCore.Client.Coroutine
             }
             else
             {
-                Misc.SpriteManager.DownloadFiles(
-                    "https://nigga.rest/where/DownloadableResources/LoadingBackgrund.png?raw=true",
-                    "DeepClient/DeepClient/LoadingBackgrund.png"
-                );
+                DeepConsole.Log("CustomVRLoadingOverlay", "Failed to find: " + filePath);
+                DeepConsole.Log("CustomVRLoadingOverlay", "Calling ClientResourceManager");
+                try
+                {
+                    ClientResourceManager.EnsureAllResourcesExist();
+                }
+                catch (Exception e)
+                {
+                    DeepConsole.LogException(e);
+                }
+                
             }
         }
     }

@@ -5,36 +5,217 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30bee687-ddae-4a22-b1e6-08f55116d6bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Client/Module/Exploits/PickupForceInteract.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DeepCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DeepCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/ClientMenu/Main_Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/ClientMenu/Main_Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/ClientMenu/LaunchPad_Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/ClientMenu/LaunchPad_Menu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/ClientMenu/MenuBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/ClientMenu/MenuBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/ClientMenu/Pages_MainMenu/ExploitHacks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/ClientMenu/Pages_MainMenu/ExploitHacks.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/ClientMenu/Pages_MainMenu/LovenseFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/ClientMenu/Pages_MainMenu/LovenseFunctions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/ClientMenu/Pages_MainMenu/UtilFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/ClientMenu/Pages_MainMenu/UtilFunctions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Coroutine/CustomLoadingAudios.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Coroutine/CustomLoadingAudios.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/ClientMenu/Target_Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/ClientMenu/Target_Menu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/Coroutine/CustomVRLoadingOverlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Coroutine/CustomVRLoadingOverlay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Coroutine/LoadingParticules.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Coroutine/LoadingParticules.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/DeepConsole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/DeepConsole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Misc/AvatarToModele.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Misc/AvatarToModele.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Misc/PlayerUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Misc/PlayerUtil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/GUI/TestModMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/GUI/TestModMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Misc/AvatarToModele.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Misc/AvatarExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Misc/SpriteManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Misc/SpriteManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Misc/UdonDisassembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Misc/UdonDisassembler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/Misc/VrcExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Misc/VrcExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Misc/WMessageBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Misc/WMessageBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Module/ApplicationBot/ObjectExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/Extensions/ObjectExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Module/ApplicationBot/PlayerExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/Extensions/PlayerExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Module/Exploits/UdonNuker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/Exploits/UdonNuker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Module/Exploits/VideoClapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/Exploits/VideoClapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Module/OnLoadedScaneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/OnLoadedScaneManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Module/QOL/RamCleaner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/QOL/RamCleaner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Module/RPC/RPCManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/RPC/RPCManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Patching/NetworkManagerPatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Patching/NetworkManagerPatch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Module/Exploits/AviYoinker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/Exploits/AviYoinker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Module/Exploits/PenClapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/Exploits/PenClapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Module/Movement/Flight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/Movement/Flight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Module/QOL/UdonSoundBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/QOL/UdonSoundBoard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/UI/QM/MenuMusic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/UI/QM/MenuMusic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/UI/QM/QMUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/UI/QM/QMUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepCore.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeepCore.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/DeepCore.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entry.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/AVProVideo.Extensions.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/AVProVideo.Extensions.Timeline.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/AVProVideo.Extensions.UnityUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/AVProVideo.Extensions.UnityUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/AVProVideo.Extensions.VisualEffectGraph.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/AVProVideo.Extensions.VisualEffectGraph.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/AVProVideo.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/AVProVideo.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Assembly-CSharp-firstpass.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Assembly-CSharp-firstpass.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/BeeByteObfuscator.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BeeByteObfuscator.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/BlobHandles.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BlobHandles.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Cinemachine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Cinemachine.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Collections.Pooled.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Collections.Pooled.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/DOTween.Modules.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/DOTween.Modules.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/DOTween.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/DOTween.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/DataModel.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/DataModel.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/DeepCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/DeepCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Depthkit.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Depthkit.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Depthkit.Studio.Lite.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Depthkit.Studio.Lite.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Depthkit.Studio.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Depthkit.Studio.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Epic.OnlineServices.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Epic.OnlineServices.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Facepunch.Steamworks.Win64.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Facepunch.Steamworks.Win64.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppMicrosoft.Extensions.Logging.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppMicrosoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppMono.Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppMono.Security.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppNewtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppNewtonsoft.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.Collections.Immutable.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.Collections.Immutable.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.Configuration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.Configuration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.Drawing.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.Drawing.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.Net.Http.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.Net.Http.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.Numerics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.Numerics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.Runtime.Serialization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.Runtime.Serialization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.Xml.Linq.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.Xml.Linq.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.Xml.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.Xml.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppSystem.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2CppValve.Newtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2CppValve.Newtonsoft.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Il2Cppmscorlib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Il2Cppmscorlib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Klak.Spout.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Klak.Spout.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Localization.Database.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Localization.Database.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Localization.LocalizableString.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Localization.LocalizableString.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Localization.StringFormatting.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Localization.StringFormatting.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/MeaMod.DNS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/MeaMod.DNS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/NtpTimestamp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/NtpTimestamp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Oculus.VR.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Oculus.VR.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/OscCore.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/OscCore.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Photon-DotNet.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Photon-DotNet.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/RenderHeads.AVProMovieCapture.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RenderHeads.AVProMovieCapture.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Sentry.Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Sentry.Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Sentry.System.Collections.Immutable.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Sentry.System.Collections.Immutable.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Sentry.System.Memory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Sentry.System.Memory.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Sentry.System.Numerics.Vectors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Sentry.System.Numerics.Vectors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Sentry.System.Reflection.Metadata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Sentry.System.Reflection.Metadata.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Sentry.System.Text.Encodings.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Sentry.System.Text.Encodings.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Sentry.System.Text.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Sentry.System.Text.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Sentry.System.Threading.Tasks.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Sentry.System.Threading.Tasks.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Sentry.Unity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Sentry.Unity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Sentry.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Sentry.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/SteamVR.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/SteamVR.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/SteamVR_Actions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/SteamVR_Actions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UniTask.Addressables.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UniTask.Addressables.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UniTask.DOTween.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UniTask.DOTween.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UniTask.Linq.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UniTask.Linq.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UniTask.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UniTask.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UniTask.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UniTask.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.AI.Navigation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.AI.Navigation.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Burst.Unsafe.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Burst.Unsafe.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Burst.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Burst.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Collections.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Collections.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.InputSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.InputSystem.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Mathematics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Mathematics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Postprocessing.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Postprocessing.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Services.Core.Configuration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Services.Core.Configuration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Services.Core.Device.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Services.Core.Device.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Services.Core.Environments.Internal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Services.Core.Environments.Internal.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Services.Core.Internal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Services.Core.Internal.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Services.Core.Registration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Services.Core.Registration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Services.Core.Scheduler.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Services.Core.Scheduler.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Services.Core.Telemetry.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Services.Core.Telemetry.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Services.Core.Threading.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Services.Core.Threading.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Services.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Services.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.Timeline.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.XR.Management.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.XR.Management.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Unity.XR.OpenVR.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Unity.XR.OpenVR.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.AIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.AIModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.ARModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.ARModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.AccessibilityModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.AccessibilityModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.AndroidJNIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.AndroidJNIModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.AnimationModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.AnimationModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.AssetBundleModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.AssetBundleModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.AudioModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.AudioModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.ClothModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.ClothModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.ClusterInputModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.ClusterInputModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.ClusterRendererModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.ClusterRendererModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.ContentLoadModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.ContentLoadModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.CoreModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.CoreModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.CrashReportingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.CrashReportingModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.DSPGraphModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.DSPGraphModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.DirectorModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.DirectorModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.GIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.GIModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.GameCenterModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.GameCenterModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.GridModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.GridModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.HotReloadModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.HotReloadModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.IMGUIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.IMGUIModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.ImageConversionModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.ImageConversionModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.InputLegacyModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.InputLegacyModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.InputModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.InputModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.JSONSerializeModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.JSONSerializeModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.LocalizationModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.LocalizationModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.NVIDIAModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.NVIDIAModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.ParticleSystemModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.ParticleSystemModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.PerformanceReportingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.PerformanceReportingModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.Physics2DModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.Physics2DModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.PhysicsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.PhysicsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.ProfilerModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.ProfilerModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.PropertiesModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.PropertiesModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.Purchasing.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.Purchasing.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.ScreenCaptureModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.ScreenCaptureModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.SharedInternalsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.SharedInternalsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.SpatialTracking.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.SpatialTracking.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.SpriteMaskModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.SpriteMaskModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.SpriteShapeModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.SpriteShapeModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.StreamingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.StreamingModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.SubstanceModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.SubstanceModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.SubsystemsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.SubsystemsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.TLSModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.TLSModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.TerrainModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.TerrainModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.TerrainPhysicsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.TerrainPhysicsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.TextCoreFontEngineModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.TextCoreFontEngineModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.TextCoreTextEngineModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.TextCoreTextEngineModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.TextRenderingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.TextRenderingModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.TilemapModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.TilemapModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UIElementsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UIElementsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UIModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UmbraModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UmbraModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UnityAnalyticsCommonModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UnityAnalyticsCommonModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UnityAnalyticsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UnityAnalyticsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UnityConnectModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UnityConnectModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UnityCurlModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UnityCurlModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UnityTestProtocolModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UnityTestProtocolModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UnityWebRequestAssetBundleModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UnityWebRequestAssetBundleModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UnityWebRequestAudioModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UnityWebRequestAudioModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UnityWebRequestModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UnityWebRequestModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UnityWebRequestTextureModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UnityWebRequestTextureModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.UnityWebRequestWWWModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.UnityWebRequestWWWModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.VFXModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.VFXModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.VRModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.VRModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.VehiclesModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.VehiclesModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.VideoModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.VideoModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.VirtualTexturingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.VirtualTexturingModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.WindModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.WindModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.XRModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.XRModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/UnityEngine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/UnityEngine.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Core.Networking.Codec.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Core.Networking.Codec.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Core.Networking.FlatBuffers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Core.Networking.FlatBuffers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Core.Networking.Tools.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Core.Networking.Tools.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Dynamics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Dynamics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.SDK3.Depthkit.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.SDK3.Depthkit.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.SDK3.Dynamics.Constraint.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.SDK3.Dynamics.Constraint.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.SDK3.Dynamics.Contact.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.SDK3.Dynamics.Contact.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.SDK3.Dynamics.PhysBone.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.SDK3.Dynamics.PhysBone.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.SDKBase.Editor.BuildPipeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.SDKBase.Editor.BuildPipeline.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.UI.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.UI.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.UI.Elements.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.UI.Elements.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.UI.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.UI.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Udon.ClientBindings.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Udon.ClientBindings.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Udon.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Udon.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Udon.Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Udon.Security.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Udon.Serialization.AOT.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Udon.Serialization.AOT.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Udon.Serialization.OdinSerializer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Udon.Serialization.OdinSerializer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Udon.VM.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Udon.VM.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Udon.VRCWrapperModules.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Udon.VRCWrapperModules.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Udon.Wrapper.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Udon.Wrapper.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Udon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Udon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRC.Utility.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRC.Utility.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRCCore-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRCCore-Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRCCore-Standalone.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRCCore-Standalone.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRCEconomy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRCEconomy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRCLog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRCLog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRCSDK2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRCSDK2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRCSDK3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRCSDK3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRCSDK3A.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRCSDK3A.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/VRCSDKBase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/VRCSDKBase.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/WebTransMtn.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/WebTransMtn.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/__Generated.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/__Generated.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/io.sentry.unity.runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/io.sentry.unity.runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/vrc-oscquery-lib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/vrc-oscquery-lib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/websocket-sharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/websocket-sharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Release/DeepCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DeepCore.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +230,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0c0424d67e604d70a80c7554ad01ed587fe00/2a/2fb607f8/VRCPickup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0d62bdcacc514f6eba32feb85131033a4f400/f1/ec766bde/ResourceManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/45a495136ec54532abb594c6b76dfcdbd7e00/7c/180363b4/VRC_Pickup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c2459bb691ad422a977cde6503cb4fb6528000/0d/972b1122/QuickMenuPlacer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c2459bb691ad422a977cde6503cb4fb6528000/34/0ed48d56/QuickMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Client/ClientMenu/Pages_MainMenu/DevMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Client/Module/ApplicationBot/AppBotMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Client/Module/ApplicationBot/Bot.cs" root0="SKIP_HIGHLIGHTING" />
@@ -100,6 +283,10 @@
       <workItem from="1744847122745" duration="1331000" />
       <workItem from="1745339040465" duration="29249000" />
       <workItem from="1745375742032" duration="16000" />
+      <workItem from="1745419166607" duration="16619000" />
+      <workItem from="1745438378741" duration="7109000" />
+      <workItem from="1745519760406" duration="142000" />
+      <workItem from="1745528455598" duration="458000" />
     </task>
     <servers />
   </component>
