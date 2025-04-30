@@ -14,7 +14,7 @@ namespace DeepCore.Client.Patching
         }
         internal static bool OnEvent(EventData param_1)
         {
-            return Module.Photon.PhtonManagerUtils.PhotonEvent(param_1);
+            return Module.Photon.PhotonManagerUtils.PhotonEvent(param_1);
         }
     }
 }

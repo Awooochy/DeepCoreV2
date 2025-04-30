@@ -116,10 +116,6 @@ namespace DeepCore.Client.Misc
             }
             return -1;
         }
-        internal static bool AnyActionMenuesOpen()
-        {
-            return ActionMenuController.field_Public_Static_ActionMenuController_0.field_Public_ActionMenuOpener_0.field_Private_Boolean_0 || ActionMenuController.field_Public_Static_ActionMenuController_0.field_Public_ActionMenuOpener_1.field_Private_Boolean_0;
-        }
         public static Player LocalPlayer()
         {
             return Player.prop_Player_0;

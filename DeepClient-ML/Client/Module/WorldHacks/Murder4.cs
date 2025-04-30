@@ -518,12 +518,12 @@ namespace DeepCore.Client.Module.WorldHacks
             {
                 yield return null;
             }
-            GameObject.Find("Game Logic/Game Canvas/Pregame/Title Text").GetComponent<TextMeshProUGUI>().text = "HABIBI 4";
+            GameObject.Find("Game Logic/Game Canvas/Pregame/Title Text").GetComponent<TextMeshProUGUI>().text = "MURDER 4";
             GameObject.Find("Game Logic/Game Canvas/Pregame/Title Text").GetComponent<TextMeshProUGUI>().color = Color.red;
-            GameObject.Find("Game Logic/Game Canvas/Pregame/Author Text").GetComponent<TextMeshProUGUI>().text = "By Osama";
+            GameObject.Find("Game Logic/Game Canvas/Pregame/Author Text").GetComponent<TextMeshProUGUI>().text = "MODIFIED BY DEEPCORE V2";
             GameObject.Find("Game Logic/Game Canvas/Pregame/Author Text").GetComponent<TextMeshProUGUI>().color = Color.red;
             GameObject.Find("Game Logic/Game Canvas/Background Panel Border").GetComponent<Image>().color = Color.red;
-            DeepConsole.LogConsole("M4", "Disabling useless hud...");
+            DeepConsole.LogConsole("Murder 4", "Hud disabled");
             GameObject.Find("Game Logic/Player HUD/Death HUD Anim").SetActive(false);
             GameObject.Find("Game Logic/Player HUD/Blind HUD Anim").SetActive(false);
             yield break;

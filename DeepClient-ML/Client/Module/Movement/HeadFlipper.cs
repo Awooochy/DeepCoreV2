@@ -1,4 +1,4 @@
-﻿using VRC;
+﻿/*using VRC;
 using VRC.DataModel;
 
 namespace DeepCore.Client.Module.Movement
@@ -20,4 +20,4 @@ namespace DeepCore.Client.Module.Movement
             }
         }
     }
-}
+}*/

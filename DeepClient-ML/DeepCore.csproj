@@ -76,7 +76,6 @@
     <Compile Include="Client\Misc\PhotonEx.cs" />
     <Compile Include="Client\Misc\PopupHelper.cs" />
     <Compile Include="Client\Misc\SpriteManager.cs" />
-    <Compile Include="Client\Module\Exploits\AviYoinker.cs" />
     <Compile Include="Client\Module\Exploits\BeyBladePickup.cs" />
     <Compile Include="Client\Module\Exploits\CamSoundSpammer.cs" />
     <Compile Include="Client\Module\Exploits\InvSpammer.cs" />
@@ -94,7 +93,6 @@
     <Compile Include="Client\Module\Exploits\VideoClapper.cs" />
     <Compile Include="Client\Module\Exploits\WTriggerNuker.cs" />
     <Compile Include="Client\Module\Funnies\FagFinder.cs" />
-    <Compile Include="Client\Module\Funnies\RussianRoulette.cs" />
     <Compile Include="Client\Module\Movement\Flight.cs" />
     <Compile Include="Client\Module\Movement\ForceJump.cs" />
     <Compile Include="Client\Module\Movement\HeadFlipper.cs" />
@@ -109,17 +107,15 @@
     <Compile Include="Client\Module\Photon\ModerationNotic.cs" />
     <Compile Include="Client\Module\Photon\MovementSerilize.cs" />
     <Compile Include="Client\Module\Photon\PhotonDebugger.cs" />
-    <Compile Include="Client\Module\Photon\PhtonManagerUtils.cs" />
-    <Compile Include="Client\Module\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Client\Module\Photon\PhotonManagerUtils.cs" />
     <Compile Include="Client\Module\Extensions\PlayerExtensions.cs" />
-    <Compile Include="Client\Module\QOL\CacheCleanr.cs" />
+    <Compile Include="Client\Module\QOL\CacheCleanRam.cs" />
     <Compile Include="Client\Module\QOL\CoreLimiter.cs" />
     <Compile Include="Client\Module\QOL\KeyBindManager.cs" />
     <Compile Include="Client\Module\QOL\LastInstanceRejoiner.cs" />
     <Compile Include="Client\Module\QOL\LoadingScreenPictures.cs" />
     <Compile Include="Client\Module\QOL\NoSteamAtAll.cs" />
     <Compile Include="Client\Module\QOL\OldLoadingScreenMod.cs" />
-    <Compile Include="Client\Module\QOL\QMFreeze.cs" />
     <Compile Include="Client\Module\QOL\RamCleaner.cs" />
     <Compile Include="Client\Module\QOL\ThirdPersonView.cs" />
     <Compile Include="Client\Module\QOL\UdonSoundBoard.cs" />
@@ -877,9 +873,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Client\UI\HUD\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Yoink.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

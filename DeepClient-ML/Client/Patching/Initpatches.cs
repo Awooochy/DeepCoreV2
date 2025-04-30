@@ -166,20 +166,12 @@ namespace DeepCore.Client.Patching
         #region MenuShit
         private static void QmOpen()
         {
-            if (ConfManager.ShouldQMFreeze.Value)
-            {
-                Module.QOL.QMFreeze.State(true);
-            }
             Coroutine.CustomMenuBG.ApplyColors();
-            //UI.QM.MenuMusic.State(true);
+            UI.QM.MenuMusic.State(true);
         }
         private static void QmClose()
         {
-            if (ConfManager.ShouldQMFreeze.Value)
-            {
-                Module.QOL.QMFreeze.State(false);
-            }
-            //UI.QM.MenuMusic.State(false);
+            UI.QM.MenuMusic.State(false);
         }
         #endregion
         private static void GetVRCPlusStatus(ref Object1PublicTYBoTYUnique<bool> __result)

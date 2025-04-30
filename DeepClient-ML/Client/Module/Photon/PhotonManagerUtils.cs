@@ -9,7 +9,7 @@ using Photon.Realtime;
 
 namespace DeepCore.Client.Module.Photon
 {
-    internal class PhtonManagerUtils
+    internal class PhotonManagerUtils
     {
         public static bool isdebugtime = false;
         public static bool PhotonEvent(EventData param_1)

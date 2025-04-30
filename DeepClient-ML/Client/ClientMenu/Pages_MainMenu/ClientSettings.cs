@@ -41,11 +41,7 @@ namespace DeepCore.Client.ClientMenu.Pages_MainMenu
                 ConfManager.AntiAvatarScallingdisabler.Value = s;
                 MelonPreferences.Save();
             }, ConfManager.AntiAvatarScallingdisabler.Value);
-            category.AddToggle("QMFreeze", "Allow you to lock yourself when opening menu when falling down.", delegate (bool s)
-            {
-                ConfManager.ShouldQMFreeze.Value = s;
-                MelonPreferences.Save();
-            }, ConfManager.ShouldQMFreeze.Value);
+            
             category.AddToggle("Menu Music", "Music or not?", delegate (bool s)
             {
                 ConfManager.ShouldMenuMusic.Value = s;
@@ -82,8 +78,8 @@ namespace DeepCore.Client.ClientMenu.Pages_MainMenu
             }, Module.Photon.ChatBoxLogger.isEnabled);
             category1.AddToggle("Log Photon OnEvent", "Log photon onevent to cmd.", delegate (bool s)
             {
-                Module.Photon.PhtonManagerUtils.isdebugtime = s;
-            }, Module.Photon.PhtonManagerUtils.isdebugtime);
+                Module.Photon.PhotonManagerUtils.isdebugtime = s;
+            }, Module.Photon.PhotonManagerUtils.isdebugtime);
             category1.AddToggle("Log Photon OnEventSent", "Log photon oneventsent to cmd.", delegate (bool s)
             {
                 Module.Photon.PhotonDebugger.IsOnEventSendDebug = s;

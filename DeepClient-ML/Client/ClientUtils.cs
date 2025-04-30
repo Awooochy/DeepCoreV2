@@ -37,7 +37,7 @@ namespace DeepCore.Client
             }
             else
             {
-                WMessageBox.HandleInternalFailure("DC01: Failed to connect to realtime severs.",true);
+                WMessageBox.HandleInternalFailure("Where is the loader?!",true);
             }
         }
         public static void LogUdon()

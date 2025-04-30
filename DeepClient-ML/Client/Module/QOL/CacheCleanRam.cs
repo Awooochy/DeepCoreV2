@@ -3,7 +3,7 @@ using System.IO;
 
 namespace DeepCore.Client.Module.QOL
 {
-    internal class CacheCleanr
+    internal class CacheCleanRam
     {
         public static void Clean()
         {

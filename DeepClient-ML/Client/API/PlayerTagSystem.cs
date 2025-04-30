@@ -36,13 +36,9 @@ namespace DeepCore.Client.API
         }
         private static Dictionary<string, (string Tag, string Color)> allowedPlayers = new Dictionary<string, (string, string)>
         {
-        {"usr_a7d59ec0-4e6a-4f94-ad37-972602b72958", ("Silly Beans :3", "#570f96")}, //LXQtie
-        {"usr_fc152d76-e45a-448e-b90a-860da7ea8b3e", ("Débiteur halal.", "#00ff44")}, //faucheuse -
-        {"usr_7dd8c2f2-6884-44c6-b9b2-490770b64a49", ("<size=120%>HORNY FURRY<size=90%>LTG Member", "#ff0000")}, //ＶＩＫＳＴＯＲＮᴷᴳ
-        {"usr_53df9514-8d47-4c5c-ae32-04735c392e8b", ("SnØwfall", "#ff0000")}, //puffaufromage
-        {"usr_29187716-6c4d-4215-9342-925b99fe4374", ("<size=220%>Pédo", "#00ff51")}, //Nakat0_中戸
-        {"usr_8775051c-9e24-4710-8d60-db0aaef67534", ("- BadUpdate Enjoyer -", "#00ff51")}, //TheFrenchStoner
-        {"usr_78d05283-0c89-4f88-a89e-757233aebb81", ("<size=140%>Fuckable", "#e292fc")} //Proza₡
+        {"usr_a7d59ec0-4e6a-4f94-ad37-972602b72958", ("Ex DeepClient Dev", "#570f96")}, //LXQtie
+        {"usr_78d05283-0c89-4f88-a89e-757233aebb81", ("<size=140%>Retard", "#e292fc")}, //Proza₡
+        {"usr_452c013c-10e6-4467-bc2c-67a8a322fbf2", ("<size=200%>DEEPCORE V2 DEV", "#e292fc")}
         };
     }
 }

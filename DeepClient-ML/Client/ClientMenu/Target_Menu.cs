@@ -85,10 +85,6 @@ namespace DeepCore.Client.ClientMenu
                 var a = ReMod.Core.VRChat.PlayerExtensions.GetVRCPlayer();
                 Module.Exploits.ForceLewd.LewdPlayer(a);
             });
-            UserExploits.AddButton("Reupload\nAvatar", "...", delegate
-            {
-                Module.Exploits.AviYoinker.askbeforeyoink();
-            });
             UserExploits.AddToggle("Camera Sounds", "", delegate (bool s)
             {
                 Module.Exploits.CamSoundSpammer.State(s);
