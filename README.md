@@ -14,6 +14,7 @@ Snow
 Anyone related to Hexxed monkeys
 Real Monkeys
 Magma
+Any KNOWN leakers
 
 
 
