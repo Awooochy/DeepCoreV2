@@ -7,9 +7,9 @@ namespace DeepCore.Client.Misc
 {
     internal class UIColorManager
     {
-        public static float HRed = 0;
-        public static float HGreen = 0.438850343f;
-        public static float HBlue = 0.712937f;
+        public static float HRed = 1f;
+        public static float HGreen = 0f;
+        public static float HBlue = 0.592156863f;
         public static void SetRed()
         {
             PopupHelper.PopupCall("UI Color", "Enter color values with commas (e.g., 0.10, 0.25, 0.75)...", "Set", false, userInput =>
