@@ -5,12 +5,93 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30bee687-ddae-4a22-b1e6-08f55116d6bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.vs/DeepCore/FileContentIndex/454e1931-ecc0-4887-8c52-1bb93bde5659.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/DeepCore/FileContentIndex/e661a7e1-5d1c-439e-ad4c-699c78443ae9.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Api/AMUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Api/ActionMenuPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Api/CustomSubMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Api/VRCActionMenuPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/AstroActionMenuPatches.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Helpers/Constants.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Helpers/ExtensionMethods.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Helpers/Utilities.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Managers/FourAxisPuppetManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Managers/InputManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Managers/ModsFolderManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Managers/RadialPuppetManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Managers/ResourcesManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Pedals.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Types/ActionMenuHand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Types/Insertion.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ActionMenuAPI/Types/PedalType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ApiPaths.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ApiToolsExts.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/Base.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ButtonExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/ButtonStringExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/CameraPaths.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Buttons/Groups/ButtonGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Buttons/Groups/CollapsibleButtonGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Buttons/Groups/DuoButtons.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Buttons/Groups/DuoToggles.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Buttons/Groups/GrpButtons.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Buttons/Groups/GrpToggles.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Buttons/Lable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Buttons/VRCButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Buttons/VRCToggle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Carousel/Items/QMCFuncButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Carousel/Items/QMCFuncToggle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Carousel/Items/QMCSelector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Carousel/Items/QMCSlider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Carousel/Items/QMCTitle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Carousel/Items/QMCToggle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Carousel/QMCGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Controls/ButtonGroupControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Controls/ClientPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Controls/ExtendedControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Controls/ExtentedControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Controls/QMCControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Controls/Root.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Controls/SliderControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Controls/ToggleControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Extras/QMCellInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Extras/QMUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Extras/VRCSlider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Icon.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Tab.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/VRCPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Wings/WingButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Wings/WingMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/QM/Wings/WingToggle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/Tools/Finder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/Tools/MenuTools.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/Tools/PageGen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/Tools/UIMethods.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/Tools/VRChatMenuExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/UIPaths/UserInterfaceObjects.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/UIPaths/VRChat_LoadingScreenObjects.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/XRefExts.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/MenuApi/XrefScannerUtils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DeepCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DeepCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Misc/PlayerUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Misc/PlayerUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeepCore.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/DeepCore.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DeepCore/FileContentIndex/37d6915b-bead-4dcf-a531-95577f1476af.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DeepCore/FileContentIndex/8544e27b-4c02-4921-83f0-e51d668c405a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DeepCore/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DeepCore/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DeepCore/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DeepCore/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DeepCore/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DeepCore/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/DeepConsole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/DeepConsole.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Module/Visual/ESP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Module/Visual/ESP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Mono/CustomNameplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Mono/CustomNameplate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Patching/NetworkManagerPatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Patching/NetworkManagerPatch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entry.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/DeepCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/DeepCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/cscompmgd.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.ResolveComReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DeepCore.csproj.ResolveComReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Release/DeepCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DeepCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/Interop.SystemMonitor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/Interop.SystemMonitor.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,31 +133,35 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2vpfpWOasyAOLLljjcOJxzPx4Zl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\david\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\david\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\david\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\david\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\david\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\david\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,6 +180,7 @@
       <workItem from="1745612279503" duration="1942000" />
       <workItem from="1745622741542" duration="48000" />
       <workItem from="1745622805073" duration="31000" />
+      <workItem from="1746308692000" duration="4770000" />
     </task>
     <servers />
   </component>
@@ -102,6 +188,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

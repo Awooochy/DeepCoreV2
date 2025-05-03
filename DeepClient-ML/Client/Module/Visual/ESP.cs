@@ -22,6 +22,7 @@ namespace DeepCore.Client.Module.Visual
                         continue;
                     Transform transform = player.gameObject.transform.Find("SelectRegion");
                     InputManager.EnableObjectHighlight(transform.GetComponent<Renderer>(), true);
+                    
                 }
             }
         }

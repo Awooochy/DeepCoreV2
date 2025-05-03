@@ -1,4 +1,5 @@
-﻿using DeepCore.Client.Misc;
+﻿using System;
+using DeepCore.Client.Misc;
 using DeepCore.Client.Mono;
 using UnityEngine.Events;
 using VRC;
@@ -43,29 +44,82 @@ namespace DeepCore.Client.Patching
                 return;
             }
             Module.Visual.ESP.OnPlayerJoin();
-            if (ConfManager.playerLogger.Value)
+
+            try
             {
-                DeepConsole.Log("PLogger", $"{__0.field_Private_APIUser_0.displayName} has joined.");
-            }
-            if (ConfManager.customnameplate.Value)
-            {
-                var nameplate = __0.gameObject.AddComponent<CustomNameplate>();
-                nameplate.Player = __0;
-            }
-            API.PlayerTagSystem.CheckPlayer(__0);
-            if (ConfManager.VRCAdminStaffLogger.Value && __0.field_Private_APIUser_0.hasModerationPowers)
-            {
-                string alertMessage = $"There is a VRChat mod in the lobby!\nName: {__0.field_Private_APIUser_0.displayName}";
-                for (int i = 0; i < 3; i++)
+                if (ConfManager.playerLogger.Value)
                 {
-                    VrcExtensions.AlertPopup("ALERT: [MODERATOR/ADMIN]", alertMessage, 20);
+                    DeepConsole.Log("PLogger", $"{__0.field_Private_APIUser_0.displayName} has joined.");
                 }
             }
-            if (ConfManager.AntiQuest.Value && __0.field_Private_APIUser_0.IsOnMobile)
+            catch(Exception e)
             {
-                __0.gameObject.SetActive(false);
-                DeepConsole.Log("AntiQuest", $"Locally Blocked Quest Player -> {__0.field_Private_APIUser_0.displayName}");
+                DeepConsole.LogConsole("NetworkManagerPatch","ConfManager.playerLogger.Value HA REVENTADO");
+                DeepConsole.LogException(e);
             }
+
+
+            try
+            {
+                if (ConfManager.customnameplate.Value) // Check if the feature is enabled
+                {
+                    // Add the CustomNameplate component to the joining player's GameObject
+                    var nameplate = __0.gameObject.AddComponent<CustomNameplate>(); 
+                    // Assign the Player object to the component so it knows which player to track
+                    nameplate.Player = __0; 
+                }
+            }
+            catch (Exception e)
+            {
+                DeepConsole.LogConsole("NetworkManagerPatch","ConfManager.customnameplate.Value HA REVENTADO");
+                DeepConsole.LogException(e);
+            }
+
+
+            try
+            {
+                API.PlayerTagSystem.CheckPlayer(__0);
+            }
+            catch (Exception e)
+            {
+                DeepConsole.LogConsole("NetworkManagerPatch","API.PlayerTagSystem.CheckPlayer HA REVENTADO");
+                DeepConsole.LogException(e);
+            }
+
+            try
+            {
+                if (ConfManager.VRCAdminStaffLogger.Value && __0.field_Private_APIUser_0.hasModerationPowers)
+                {
+                    string alertMessage = $"There is a VRChat STAFF in the lobby!\nName: {__0.field_Private_APIUser_0.displayName}";
+                    for (int i = 0; i < 3; i++)
+                    {
+                        VrcExtensions.AlertPopup("ALERT: [MODERATOR/ADMIN]", alertMessage, 20);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                DeepConsole.LogConsole("NetworkManagerPatch","ConfManager.VRCAdminStaffLogger.Value HA REVENTADO");
+                DeepConsole.LogException(e);
+            }
+            
+            try
+            {
+                if (ConfManager.AntiQuest.Value && __0.field_Private_APIUser_0.IsOnMobile)
+                {
+                    __0.gameObject.SetActive(false);
+                    DeepConsole.Log("AntiQuest", $"Locally Blocked Quest Player -> {__0.field_Private_APIUser_0.displayName}");
+                }
+            }
+            catch (Exception e)
+            {
+                DeepConsole.LogConsole("NetworkManagerPatch","ConfManager.AntiQuest.Value HA REVENTADO");
+                DeepConsole.LogException(e);
+            }
+            
+            
+            
+            
         }
         internal static void OnLeaveEvent(Player __0)
         {

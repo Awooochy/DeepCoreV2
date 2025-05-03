@@ -28,7 +28,7 @@ namespace DeepCore.Client
                 Console.SetOut(writer);
                 Console.SetError(writer);
                 Console.CursorVisible = false;
-                Console.Title = "DeepCore - v2.0.1 - Private";
+                Console.Title = "DeepCore - v2.0.5.B - Private";
             }
         }
         public static void Log(string Name, string Content)

@@ -9,6 +9,7 @@ using DeepCore.ServerAPI;
 using DeepCore.Client.Misc;
 using DeepCore.Client.GUI;
 using DeepCore.ServerAPI.ClientResourceManager;
+using VRC.SDK.Internal.MeetingBunker;
 
 
 namespace DeepCore
@@ -32,10 +33,12 @@ namespace DeepCore
             }
             catch (Exception ex)
             {}
-            //here we start the client
-
+            
+            //We call auth for checking if you're a bro or leaker
             AuthAPI API = new AuthAPI();
             API.Auth();
+            
+            //here we start the client
             StartClient();
         }
 
@@ -44,7 +47,17 @@ namespace DeepCore
             try
             {
                 ClientResourceManager.EnsureAllResourcesExist();
-                DiscordManager.Init();
+
+                try
+                {
+                    DiscordManager.Init();
+                }
+                catch(Exception e)
+                {
+                    DeepConsole.LogConsole("Entry System","DiscordManager failed to initialize");
+                    DeepConsole.LogException(e);
+                }
+                
                 ConfManager.initConfig();
                 MelonPreferences.Load();
                 DeepConsole.Art();

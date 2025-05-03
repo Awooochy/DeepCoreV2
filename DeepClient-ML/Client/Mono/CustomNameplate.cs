@@ -72,6 +72,7 @@ namespace DeepCore.Client.Mono
 		catch (Exception ex)
 		{
 			MelonLogger.Msg(ex.Message);
+			DeepConsole.LogConsole("NAMEPLATE SYSTEM", "NAMEPLATES FUCKED");
 		}
 	}
 

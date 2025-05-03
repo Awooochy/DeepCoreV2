@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\",
+  "WorkspaceRootPath": "C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|c:\\users\\septh\\documents\\github\\deepcorev2\\deepclient-ml\\client\\misc\\uicolormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|c:\\users\\david\\documents\\github\\deepcorev2\\deepclient-ml\\client\\misc\\uicolormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|solutionrelative:client\\misc\\uicolormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|c:\\users\\septh\\documents\\github\\deepcorev2\\deepclient-ml\\client\\module\\qol\\ramcleaner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\client\\module\\qol\\ramcleaner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|solutionrelative:client\\module\\qol\\ramcleaner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\serverapi\\authapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\serverapi\\authapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|solutionrelative:serverapi\\authapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\entry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\entry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|solutionrelative:entry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\client\\module\\qol\\keybindmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\client\\module\\qol\\keybindmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{788BC472-59F7-46F6-B760-65C18BA74389}|DeepCore.csproj|solutionrelative:client\\module\\qol\\keybindmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,15 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Entry.cs",
-              "DocumentMoniker": "C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Entry.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Entry.cs",
               "RelativeDocumentMoniker": "Entry.cs",
-              "ToolTip": "C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Entry.cs",
+              "ToolTip": "C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Entry.cs",
               "RelativeToolTip": "Entry.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwBkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -46,14 +46,34 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UIColorManager.cs",
-              "DocumentMoniker": "C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Misc\\UIColorManager.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Misc\\UIColorManager.cs",
               "RelativeDocumentMoniker": "Client\\Misc\\UIColorManager.cs",
-              "ToolTip": "C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Misc\\UIColorManager.cs",
+              "ToolTip": "C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Misc\\UIColorManager.cs",
               "RelativeToolTip": "Client\\Misc\\UIColorManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwA8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-03T21:16:34.2Z",
               "EditorCaption": ""
@@ -62,9 +82,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AuthAPI.cs",
-              "DocumentMoniker": "C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\ServerAPI\\AuthAPI.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\ServerAPI\\AuthAPI.cs",
               "RelativeDocumentMoniker": "ServerAPI\\AuthAPI.cs",
-              "ToolTip": "C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\ServerAPI\\AuthAPI.cs",
+              "ToolTip": "C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\ServerAPI\\AuthAPI.cs",
               "RelativeToolTip": "ServerAPI\\AuthAPI.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwAUAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -74,22 +94,21 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "RamCleaner.cs",
-              "DocumentMoniker": "C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Module\\QOL\\RamCleaner.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Module\\QOL\\RamCleaner.cs",
               "RelativeDocumentMoniker": "Client\\Module\\QOL\\RamCleaner.cs",
-              "ToolTip": "C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Module\\QOL\\RamCleaner.cs",
+              "ToolTip": "C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Module\\QOL\\RamCleaner.cs",
               "RelativeToolTip": "Client\\Module\\QOL\\RamCleaner.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwCAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T20:17:23.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T20:17:23.24Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "KeyBindManager.cs",
-              "DocumentMoniker": "C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Module\\QOL\\KeyBindManager.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Module\\QOL\\KeyBindManager.cs",
               "RelativeDocumentMoniker": "Client\\Module\\QOL\\KeyBindManager.cs",
-              "ToolTip": "C:\\Users\\septh\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Module\\QOL\\KeyBindManager.cs",
+              "ToolTip": "C:\\Users\\david\\Documents\\GitHub\\DeepCoreV2\\DeepClient-ML\\Client\\Module\\QOL\\KeyBindManager.cs",
               "RelativeToolTip": "Client\\Module\\QOL\\KeyBindManager.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAACgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
