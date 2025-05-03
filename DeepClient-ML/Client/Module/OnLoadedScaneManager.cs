@@ -102,7 +102,7 @@ namespace DeepCore.Client.Module
                 Total (SDK2) VRC_Trigger:{allSDK2Triggers.Count}
                 Total (SDK2) VRC_Interactable:{allSDK2Interactable.Count}
                 Total (SDK2) VRC_Pickup:{sdk2Items.Count}");
-            VrcExtensions.Toast("DeepClient - World","Loaded everything i need. >:3");
+            VrcExtensions.Toast("DeepCoreV2 - World","All needed stuff loaded.");
         }
     }
 }

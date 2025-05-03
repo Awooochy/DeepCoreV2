@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.IO;
-using System.Net;
 using UnityEngine;
 using UnityEngine.Networking;
 using VRC.UI.Elements.Controls;
+using DeepCore.ServerAPI.ClientResourceManager;
 
 namespace DeepCore.Client.UI.QM
 {
@@ -65,11 +65,12 @@ namespace DeepCore.Client.UI.QM
         }
         public static IEnumerator MenuMusicInit()
         {
-            if (File.Exists("DeepClient/LoadingMusic/MenuMusic.ogg"))
+            if (File.Exists("DeepCoreV2/LoadingMusic/MenuMusic.ogg"))
             { }
             else
             {
-                DownloadFiles("https://nigga.rest/where/DownloadableResources/MenuMusic.ogg", "DeepClient/LoadingMusic/MenuMusic.ogg");
+                ClientResourceManager.EnsureAllResourcesExist();
+                
             }
             while (GameObject.Find("Canvas_QuickMenu(Clone)") == null)
             {
@@ -78,13 +79,17 @@ namespace DeepCore.Client.UI.QM
             new GameObject("MenuMusic").transform.parent = GameObject.Find("Canvas_QuickMenu(Clone)/").transform;
             GameObject.Find("Canvas_QuickMenu(Clone)/MenuMusic").AddComponent<AudioSource>();
             GameObject.Find("Canvas_QuickMenu(Clone)/MenuMusic").GetComponent<AudioSource>().loop = true;
-            string path = Path.Combine(Directory.CreateDirectory("DeepClient/LoadingMusic").FullName, "MenuMusic.ogg");
+            string path = Path.Combine(Directory.CreateDirectory("DeepCoreV2/LoadingMusic").FullName, "MenuMusic.ogg");
+            
+            
             if (!File.Exists(path))
             {
                 var download = new UnityWebRequest("\"https://nigga.rest/where/DownloadableResources/MenuMusic.ogg", UnityWebRequest.kHttpVerbGET);
                 download.downloadHandler = new DownloadHandlerFile(path);
                 yield return download.SendWebRequest();
             }
+            
+            
             UnityWebRequest localfile = UnityWebRequest.Get("file://" + path);
             yield return localfile.SendWebRequest();
             clip = WebRequestWWW.InternalCreateAudioClipUsingDH(localfile.downloadHandler, localfile.url, false, false, 0);
@@ -95,24 +100,6 @@ namespace DeepCore.Client.UI.QM
             musicObj.Stop();
             IsLoaded = true;
             yield break;
-        }
-        public static byte[] DownloadFiles(string downloadUrl, string savePath)
-        {
-            byte[] result = null;
-            using (WebClient webClient = new WebClient())
-            {
-                try
-                {
-                    result = webClient.DownloadData(downloadUrl);
-                    File.WriteAllBytes(savePath, result);
-                    DeepConsole.Log("AudioManager", $"Downloaded: {savePath}");
-                }
-                catch (Exception ex)
-                {
-                    DeepConsole.Log("AudioManager", $"An error occurred while downloading: {ex}");
-                }
-            }
-            return result;
         }
     }
 }

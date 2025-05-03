@@ -10,7 +10,7 @@ namespace DeepCore.Client.Misc
     {
         public static void Log()
         {
-            string filePath = "DeepClient/WorldLogger.json";
+            string filePath = "DeepCoreV2/WorldLogger.json";
             List<Instance> instances = new List<Instance>();
 
             if (File.Exists(filePath))

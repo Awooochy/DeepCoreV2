@@ -23,7 +23,7 @@ namespace DeepCore.Client.Misc
                 return;
             }
 
-            var dumpFolderPath = Environment.CurrentDirectory + @"\DeepClient\MonoDumps";
+            var dumpFolderPath = Environment.CurrentDirectory + @"\DeepCoreV2\MonoDumps";
             var dumpFilePath = dumpFolderPath + @"\MonoDump.txt";
 
             Console.WriteLine($"[MonoDumper] Dump folder path: {dumpFolderPath}");

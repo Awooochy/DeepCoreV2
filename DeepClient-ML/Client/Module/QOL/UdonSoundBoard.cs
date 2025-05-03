@@ -10,7 +10,7 @@ namespace DeepCore.Client.Module.QOL
     {
         public static bool IsLoaded = false;
         public static AudioClip clip;
-        private const string SoundBoardDir = "DeepClient/SoundBoard";
+        private const string SoundBoardDir = "DeepCoreV2/SoundBoard";
         
         public static readonly HashSet<string> AllowedSoundEvents = new HashSet<string>
         {

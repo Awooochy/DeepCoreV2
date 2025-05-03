@@ -12,7 +12,7 @@ namespace DeepCore.Client.Patching
     internal class Initpatches
     {
         public static string ModuleName = "HookManager";
-        public static readonly HarmonyLib.Harmony instance = new HarmonyLib.Harmony("DeepClient.ultrapatch");
+        public static readonly HarmonyLib.Harmony instance = new HarmonyLib.Harmony("DeepCoreV2.ultrapatch");
         public static int pass = 0;
         public static int fail = 0;
         private static HarmonyMethod GetPreFix(string methodName)

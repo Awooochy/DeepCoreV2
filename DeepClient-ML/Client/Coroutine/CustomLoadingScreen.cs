@@ -32,7 +32,7 @@ namespace DeepCore.Client.Coroutine
             {
                 yield return null;
             }
-            if (File.Exists("DeepClient\\LoadingVid.mp4"))
+            if (File.Exists("DeepCoreV2\\LoadingVid.mp4"))
             {
                 DeepConsole.Log("LoadingVid", "Video found !");
                 MelonCoroutines.Start(LoadingVideo.LoadVideo());

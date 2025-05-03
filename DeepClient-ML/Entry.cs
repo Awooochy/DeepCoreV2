@@ -8,17 +8,16 @@ using System.Diagnostics;
 using DeepCore.ServerAPI;
 using DeepCore.Client.Misc;
 using DeepCore.Client.GUI;
+using DeepCore.ServerAPI.ClientResourceManager;
+
 
 namespace DeepCore
 {
     public class Entry : MelonMod
     {
         [Obsolete]
-        public static bool IsBot = false;
         public static bool IsLoaded = false;
         public static bool IsInVR = false;
-        public static string NumberBot = "0";
-        public static string ProfileNumber = "0";
 
         [Obsolete]
         public override void OnInitializeMelon()
@@ -44,6 +43,8 @@ namespace DeepCore
         {
             try
             {
+                ClientResourceManager.EnsureAllResourcesExist();
+                DiscordManager.Init();
                 ConfManager.initConfig();
                 MelonPreferences.Load();
                 DeepConsole.Art();
@@ -73,6 +74,7 @@ namespace DeepCore
         {
             DeepConsole.Log("Startup", "Starting Injectories...");
             ClassInjector.RegisterTypeInIl2Cpp<Client.Mono.CustomNameplate>();
+            ClassInjector.RegisterTypeInIl2Cpp<Client.Mono.CustomNameplateAccountAge>();
         }
 
         protected static void QOLThings()
@@ -103,11 +105,15 @@ namespace DeepCore
             }
         }
 
+        
+        //This is unity IMGUI
+        //Right now theres only tracers.
         public override void OnGUI()
         {
             Client.GUI.UpdateModule.UpdateGUI();
         }
 
+        //THIS runs when new scene is loaded.
         public override void OnSceneWasLoaded(int buildindex, string sceneName)
         {
             Client.Module.OnLoadedScaneManager.LoadedScene(buildindex, sceneName);

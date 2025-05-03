@@ -44,14 +44,14 @@
     <Compile Include="Client\Coroutine\CustomVRLoadingOverlay.cs" />
     <Compile Include="Client\Coroutine\LoadingVideo.cs" />
     <Compile Include="Client\Coroutine\LoadingParticules.cs" />
+    <Compile Include="Client\DiscordRichPresence\DiscordManager.cs" />
     <Compile Include="Client\GUI\LineESP.cs" />
-    <Compile Include="Client\GUI\TestModMenu.cs" />
     <Compile Include="Client\GUI\UpdateModule.cs" />
     <Compile Include="Client\Misc\AvatarExtensions.cs" />
     <Compile Include="Client\Misc\Binds.cs" />
-    <Compile Include="Client\Misc\ERPChecker.cs" />
     <Compile Include="Client\Misc\MediaKeys.cs" />
     <Compile Include="Client\Misc\MonoDumper.cs" />
+    <Compile Include="Client\Misc\OtherUtil.cs" />
     <Compile Include="Client\Misc\UdonDisassembler.cs" />
     <Compile Include="Client\Misc\UIColorManager.cs" />
     <Compile Include="Client\Misc\WMessageBox.cs" />
@@ -137,6 +137,7 @@
     <Compile Include="Client\Module\WorldHacks\TowerDefence.cs" />
     <Compile Include="Client\Module\WorldHacks\WorldHackMainMenu.cs" />
     <Compile Include="Client\Mono\CoroutineHandler.cs" />
+    <Compile Include="Client\Mono\CustomNameplateAccountAge.cs" />
     <Compile Include="Client\Patching\GameVersionSpoofer.cs" />
     <Compile Include="Client\Patching\NetworkManagerPatch.cs" />
     <Compile Include="Client\Patching\SpooferPatch.cs" />
@@ -180,6 +181,7 @@
     <Compile Include="Client\UI\QM\QMUI.cs" />
     <Compile Include="Client\UI\UIController.cs" />
     <Compile Include="ConfManager.cs" />
+    <Compile Include="DiscordRpc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entry.cs" />
     <Compile Include="ServerAPI\AuthAPI.cs" />
@@ -397,8 +399,8 @@
     <Reference Include="Mono.WebBrowser">
       <HintPath>D:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\Mono.WebBrowser.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>D:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Photon-DotNet, Version=4.1.8.3, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -872,7 +874,8 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Client\UI\HUD\" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

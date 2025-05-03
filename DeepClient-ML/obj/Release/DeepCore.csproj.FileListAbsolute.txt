@@ -1228,3 +1228,4 @@ C:\Users\david\Documents\GitHub\DeepCoreV2\DeepClient-ML\Output\websocket-sharp.
 C:\Users\david\Documents\GitHub\DeepCoreV2\DeepClient-ML\Output\WebTransMtn.dll
 C:\Users\david\Documents\GitHub\DeepCoreV2\DeepClient-ML\Output\__Generated.dll
 C:\Users\david\Documents\GitHub\DeepCoreV2\DeepClient-ML\Output\Newtonsoft.Json.xml
+C:\Users\david\Documents\GitHub\DeepCoreV2\DeepClient-ML\Output\DeepCore.dll.config

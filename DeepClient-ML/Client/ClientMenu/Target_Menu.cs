@@ -45,11 +45,11 @@ namespace DeepCore.Client.ClientMenu
                 if (selectedPlayer != null)
                 {
                     selectedPlayer._player.CloneAvatar(); // Using the extension method
-                    VrcExtensions.Toast("DeepClient", $"Created pickup of {selectedPlayer._player.field_Private_APIUser_0.displayName}'s avatar");
+                    VrcExtensions.Toast("DeepCoreV2", $"Created pickup of {selectedPlayer._player.field_Private_APIUser_0.displayName}'s avatar");
                 }
                 else
                 {
-                    VrcExtensions.Toast("DeepClient", "No player selected!");
+                    VrcExtensions.Toast("DeepCoreV2", "No player selected!");
                 }
             });
             
@@ -57,7 +57,7 @@ namespace DeepCore.Client.ClientMenu
             {
                 int count = AvatarExtensions.AllClones.Count;
                 AvatarExtensions.CleanupAllClones();
-                VrcExtensions.Toast("DeepClient", $"Deleted {count} avatar clones");
+                VrcExtensions.Toast("DeepCoreV2", $"Deleted {count} avatar clones");
             });
             
             
@@ -72,7 +72,7 @@ namespace DeepCore.Client.ClientMenu
             UserExploits.AddButton("Silent\nTeleport", "Will teleport you on the target without them seeing you.", delegate
             {
                 Module.Photon.MovementSerilize.State();
-                VrcExtensions.Toast("DeepClient", "MovementSerilize enabled.");
+                VrcExtensions.Toast("DeepCoreV2", "MovementSerilize enabled.");
                 VrcExtensions.TpToPlayer(ReMod.Core.VRChat.PlayerExtensions.GetVRCPlayer());
             });
             UserExploits.AddButton("Force clone", "wtf ass clone.", delegate

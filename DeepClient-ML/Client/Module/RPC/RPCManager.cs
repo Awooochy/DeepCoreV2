@@ -20,7 +20,7 @@ namespace DeepCore.Client.Module.RPC
             if (param_2.ParameterString == "DCWarn:")
             {
                 string extractedValue = param_2.ParameterString.Substring(7);
-                PopupHelper.OpenVideoInMM("DeepClient - VideoPlayer", extractedValue, true);
+                PopupHelper.OpenVideoInMM("DeepCoreV2 - VideoPlayer", extractedValue, true);
             }
         }
         public static void SendRPC(string input)

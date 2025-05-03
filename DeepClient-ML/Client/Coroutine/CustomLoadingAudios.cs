@@ -13,17 +13,17 @@ namespace DeepCore.Client.Coroutine
         public static AudioClip clip;
         public static IEnumerator Init()
         {
-            if (File.Exists("DeepClient/LoadingMusic/LoginScreenMusic.ogg"))
+            if (File.Exists("DeepCoreV2/LoadingMusic/LoginScreenMusic.ogg"))
             {}
             else
             {
-                DownloadFiles("https://nigga.rest/where/DownloadableResources/LoginScreenMusic.ogg", "DeepClient/LoadingMusic/LoginScreenMusic.ogg");
+                DownloadFiles("https://nigga.rest/where/DownloadableResources/LoginScreenMusic.ogg", "DeepCoreV2/LoadingMusic/LoginScreenMusic.ogg");
             }
             while (GameObject.Find("LoadingBackground_TealGradient_Music/LoadingSound") == null)
             {
                 yield return null;
             }
-            string path = Path.Combine(Directory.CreateDirectory("DeepClient/LoadingMusic").FullName, "LoginScreenMusic.ogg");
+            string path = Path.Combine(Directory.CreateDirectory("DeepCoreV2/LoadingMusic").FullName, "LoginScreenMusic.ogg");
             if (!File.Exists(path))
             {
                 var download = new UnityWebRequest("https://nigga.rest/where/DownloadableResources/LoginScreenMusic.ogg", UnityWebRequest.kHttpVerbGET);
@@ -56,7 +56,7 @@ namespace DeepCore.Client.Coroutine
             new GameObject("LoadingSounds").transform.parent = GameObject.Find("MenuContent/Popups/LoadingPopup/").transform;
             GameObject.Find("MenuContent/Popups/LoadingPopup/LoadingSounds").AddComponent<AudioSource>();
             GameObject.Find("MenuContent/Popups/LoadingPopup/LoadingSounds").GetComponent<AudioSource>().loop = true;
-            string path = Path.Combine(Directory.CreateDirectory("DeepClient/LoadingMusic").FullName, "LoginScreenMusic.ogg");
+            string path = Path.Combine(Directory.CreateDirectory("DeepCoreV2/LoadingMusic").FullName, "LoginScreenMusic.ogg");
             if (!File.Exists(path))
             {
                 var download = new UnityWebRequest("https://nigga.rest/where/DownloadableResources/LoginScreenMusic.ogg", UnityWebRequest.kHttpVerbGET);

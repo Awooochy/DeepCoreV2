@@ -60,7 +60,7 @@ namespace DeepCore.Client
                     udoncounts++;
                 }
             }
-            File.WriteAllText("DeepClient/UdonLog.txt", text);
+            File.WriteAllText("DeepCoreV2/UdonLog.txt", text);
             DeepConsole.Log("UdonLogger",$"Logged {udoncounts} UdonKey.");
             VrcExtensions.HudNotif($"Logged {udoncounts} UdonKey.");
             udoncounts = 0;

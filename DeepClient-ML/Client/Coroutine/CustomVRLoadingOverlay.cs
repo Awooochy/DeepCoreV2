@@ -40,7 +40,7 @@ namespace DeepCore.Client.Coroutine
                 yield break;
             }
 
-            string filePath = "DeepClient/LoadingBackgrund.png";
+            string filePath = "DeepCoreV2/LoadingBackgrund.png";
             if (File.Exists(filePath))
             {
                 overlayImage.color = Color.white;

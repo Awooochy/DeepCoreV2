@@ -11,7 +11,7 @@ namespace DeepCore.Client.Misc
 {
     public static class UdonDisassembler
     {
-        private static readonly string SaveDir = Path.Combine(Directory.GetCurrentDirectory(), "DeepClient/UdonDisassembler");
+        private static readonly string SaveDir = Path.Combine(Directory.GetCurrentDirectory(), "DeepCoreV2/UdonDisassembler");
 
         public static void Disassemble(UdonBehaviour udonBehaviour, string ubName)
         {

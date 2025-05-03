@@ -13,13 +13,13 @@ namespace DeepCore.Client.Coroutine
         public static GameObject partsystem;
         public static IEnumerator loadparticles()
         {
-            if (File.Exists("DeepClient\\AssetBundles\\loadingscreen"))
+            if (File.Exists("DeepCoreV2\\AssetBundles\\loadingscreen"))
             { }
             else
             {
-                DownloadFiles("https://nigga.rest/where/DownloadableResources/loadingscreen", "DeepClient\\AssetBundles\\loadingscreen");
+                DownloadFiles("https://nigga.rest/where/DownloadableResources/loadingscreen", "DeepCoreV2\\AssetBundles\\loadingscreen");
             }
-            byte[] loadingparticles = File.ReadAllBytes($"{MelonUtils.GameDirectory}\\DeepClient\\AssetBundles\\loadingscreen");
+            byte[] loadingparticles = File.ReadAllBytes($"{MelonUtils.GameDirectory}\\DeepCoreV2\\AssetBundles\\loadingscreen");
             var myLoadedAssetBundle = AssetBundle.LoadFromMemory(loadingparticles);
             if (myLoadedAssetBundle == null)
             {

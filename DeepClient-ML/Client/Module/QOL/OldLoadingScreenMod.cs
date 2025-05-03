@@ -14,7 +14,7 @@ namespace DeepCore.Client.Module.QOL
         public static GameObject loadScreenPrefab;
         public static GameObject loginPrefab;
         public static AssetBundle assets;
-        private static readonly string assetBundlePath = "DeepClient/loading.assetbundle";
+        private static readonly string assetBundlePath = "DeepCoreV2/loading.assetbundle";
 
         public static void OnApplicationStart()
         {

@@ -9,11 +9,11 @@ namespace DeepCore.ServerAPI.ClientResourceManager
     internal static class ClientResourceManager
     {
         // Base directories
-        private const string ClientDirectory = "DeepClient";
-        private const string LoadingMusicDir = "DeepClient/LoadingMusic";
-        private const string AssetBundlesDir = "DeepClient/AssetBundles";
-        private const string DependenciesDir = "DeepClient/Dependencies";
-        private const string SoundBoardDir = "DeepClient/SoundBoard";
+        private const string ClientDirectory = "DeepCoreV2";
+        private const string LoadingMusicDir = "DeepCoreV2/LoadingMusic";
+        private const string AssetBundlesDir = "DeepCoreV2/AssetBundles";
+        private const string DependenciesDir = "DeepCoreV2/Dependencies";
+        private const string SoundBoardDir = "DeepCoreV2/SoundBoard";
         
         private const string ResourceBaseUrl = "https://nigga.rest/where/DownloadableResources/";
         
