@@ -23,6 +23,7 @@ namespace DeepCore.Client.Mono
 	public CustomNameplate(IntPtr ptr)
 		: base(ptr)
 	{
+		DeepConsole.LogConsole("CustomNameplate", "Initialized");
 	}
 
 	public void Dispose()
@@ -84,7 +85,7 @@ namespace DeepCore.Client.Mono
 		}
 		try
 		{
-			if (frames == Player._playerNet.field_Private_Byte_0 && ping == Player._playerNet.field_Private_Byte_1)
+			if (frames == Player._playerNet.field_Private_Byte_0 && ping == Player._playerNet.field_Private_Byte_1) //Esto lo han destruido en la update!
 			{
 				noUpdateCount++;
 			}

@@ -14,6 +14,16 @@
         internal static Transform VRCUIManager => VRCUiManager.field_Private_Static_VRCUiManager_0.transform;
 
 
+        internal static VRCFlowManager _VRCFlowManager;
+        internal static VRCFlowManager VRCFlowManager
+        {
+            get
+            {
+                if (_VRCFlowManager == null)
+                    return _VRCFlowManager = Resources.FindObjectsOfTypeAll<VRCFlowManager>()[0];
+                return _VRCFlowManager;
+            }
+        }
 
 
 
@@ -618,7 +628,7 @@
             {
                 if (_UserInterface_Popups == null)
                 {
-                    _UserInterface_Popups = VRCUIManager.FindObject("MenuContent/Popups", DONT_WARN).gameObject;
+                    _UserInterface_Popups = UserInterface.FindObject("MenuContent/Popups", DONT_WARN).gameObject;
                 }
                 return _UserInterface_Popups;
             }

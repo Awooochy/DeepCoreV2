@@ -5,7 +5,7 @@ using System.IO;
 using DeepLoader.ServerAPI;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-
+using System.Threading;
 
 
 namespace DeepCoreLoader
@@ -22,6 +22,7 @@ namespace DeepCoreLoader
         {
             // Ensure Mods directory exists
             Directory.CreateDirectory(Path.Combine(MelonUtils.BaseDirectory, "Mods"));
+            
 
             // Create version file if it doesn't exist
             if (!File.Exists(_versionFilePath))

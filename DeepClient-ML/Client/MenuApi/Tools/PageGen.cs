@@ -18,7 +18,7 @@
 
         private static ConstructorInfo InitCtor()
         {
-            var ifaceType = typeof(InterfacePublicAbstractObVoObStInObVoBoStVoUnique);
+            var ifaceType = typeof(InterfacePublicAbstractObBoObVoStObInVoStBoUnique);
             // Try the simple lookup first
             var ctor = ifaceType.GetConstructor(
                 BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic,
@@ -43,7 +43,7 @@
             return ctor;
         }
 
-        internal static InterfacePublicAbstractObVoObStInObVoBoStVoUnique ToInterfaceInstance(
+        internal static InterfacePublicAbstractObBoObVoStObInVoStBoUnique ToInterfaceInstance(
             this MenuStateController controller)
         {
             if (controller == null)
@@ -61,7 +61,7 @@
             try
             {
                 // invoke the ctor(IntPtr) to wrap the Il2CppObject
-                return (InterfacePublicAbstractObVoObStInObVoBoStVoUnique)InterfaceCtor.Invoke(new object[]
+                return (InterfacePublicAbstractObBoObVoStObInVoStBoUnique)InterfaceCtor.Invoke(new object[]
                     { controller.Pointer });
             }
             catch (Exception e)
@@ -78,7 +78,7 @@
             if (page == null)
                 return null;
 
-            page.field_Protected_InterfacePublicAbstractObVoObStInObVoBoStVoUnique_0 =
+            page.field_Protected_InterfacePublicAbstractObBoObVoStObInVoStBoUnique_0 =
                 controller.ToInterfaceInstance();
             return page;
         }

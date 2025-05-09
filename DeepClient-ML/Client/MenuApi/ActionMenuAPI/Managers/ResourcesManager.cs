@@ -24,7 +24,7 @@ namespace AstroClient.MenuApi.ActionMenuAPI.Managers
         private static GameObject lockPrefab;
         public static void InitLockGameObject()
         {
-            lockPrefab = Object.Instantiate(ActionMenuDriver.field_Public_Static_ActionMenuDriver_0.GetRightOpener().GetActionMenu()
+            lockPrefab = Object.Instantiate(ActionMenuController.field_Public_Static_ActionMenuController_0.GetRightOpener().GetActionMenu()
                 .GetPedalOptionPrefab().GetComponent<PedalOption>().GetActionButton().gameObject.GetChild("Inner")
                 .GetChild("Folder Icon"));
             Object.DontDestroyOnLoad(lockPrefab);

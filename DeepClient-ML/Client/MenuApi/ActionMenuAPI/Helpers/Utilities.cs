@@ -27,7 +27,7 @@
                         && !m.HasStringLiterals()
                         && m.SameClassMethodCallCount(1)
                         && m.HasMethodCallWithName("ThrowArgumentOutOfRangeException")
-                        && !m.HasMethodWithDeclaringType(typeof(ActionMenuDriver))
+                        && !m.HasMethodWithDeclaringType(typeof(ActionMenuController))
                 );
                 refreshAMDelegate = (RefreshAMDelegate)Delegate.CreateDelegate(
                     typeof(RefreshAMDelegate),
@@ -106,7 +106,7 @@
                 .gameObject;
         }
 
-        public static ActionMenuDriver.ExpressionIcons GetExpressionsIcons()
+        public static ActionMenuController.ExpressionIcons GetExpressionsIcons()
         {
             var driver = GetDriver();
             return driver.field_Public_ExpressionIcons_0;
@@ -188,9 +188,9 @@
 
         }
 
-        public static ActionMenuDriver GetDriver()
+        public static ActionMenuController GetDriver()
         {
-            return ActionMenuDriver.field_Public_Static_ActionMenuDriver_0;
+            return ActionMenuController.field_Public_Static_ActionMenuController_0;
         }
 
         public static (double x1, double y1, double x2, double y2) GetIntersection(float x, float y, float r)

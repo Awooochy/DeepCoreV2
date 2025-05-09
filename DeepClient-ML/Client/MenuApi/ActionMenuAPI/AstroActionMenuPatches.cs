@@ -5,11 +5,14 @@
     using System.Diagnostics.CodeAnalysis;
     using System.Linq;
     using System.Reflection;
+    using AMXref;
+    using AstroClient.Tools.Extensions;
     using ClientActions;
     using HarmonyLib;
     using Helpers;
     using Managers;
     using MelonLoader;
+    using UnityEngine;
     using xAstroBoy.Patching;
 
     internal class AstroActionMenuPatchesEvents : AstroEvents
@@ -17,7 +20,7 @@
 
         internal override void ExecutePriorityPatches()
         {
-            Execute();
+           Execute();
         }
         private static void Execute()
         {
@@ -100,33 +103,32 @@
 
 
 
-        public static void PatchAll()
-        {
 
+        public static void PatchAll(){
             // Il2Cpp.MonoBehaviourPublicIPhysBoneDebugDrawerObSiObCoSiLiObCo1SiUnique.EnumNPublicSealedvaNoPhCoPh5vUnique
             //PatchMethod(openExpressionMenuKeyWords, nameof(OpenExpressionMenuPre), nameof(OpenExpressionMenuPost));
             //PatchMethod(openConfigPageKeyWords, nameof(OpenConfigPagePre), nameof(OpenConfigPagePost));
             //PatchMethod(openMainPageKeyWords, nameof(OpenMainPagePre), nameof(OpenMainPagePost));
             //PatchMethod(openEmojisPageKeyWords, nameof(OpenEmojisPagePre), nameof(OpenEmojisPagePost));
             //PatchMethod(openNameplatesPageKeyWords, nameof(OpenNameplatesPagePre), nameof(OpenNameplatesPagePost));
-            //PatchMethod(openNameplatesSizePageKeyWords, nameof(OpenNameplatesSizePre), nameof(OpenNameplatesSizePost));
-            //PatchMethod(openNameplatesVisibilityPageKeyWords, nameof(OpenNameplatesVisibilityPre), nameof(OpenNameplatesVisibilityPost));
             //PatchMethod(openSDK2ExpressionPageKeyWords, nameof(OpenSDK2ExpressionPre), nameof(OpenSDK2ExpressionPost));
             //PatchMethod(openOptionsPageKeyWords, nameof(OpenOptionsPre), nameof(OpenOptionsPost));
 
-            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Public_Void_PDM_13)), GetPatch(nameof(OpenExpressionMenuPre)),GetPatch(nameof(OpenExpressionMenuPost)));
-            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Private_Void_PDM_9)), GetPatch(nameof(OpenConfigPagePre)), GetPatch(nameof(OpenConfigPagePost)));
-            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Public_Void_PDM_4)), GetPatch(nameof(OpenMainPagePre)), GetPatch(nameof(OpenMainPagePost)));
-            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Private_Void_PDM_4)), GetPatch(nameof(OpenEmojisPagePre)), GetPatch(nameof(OpenEmojisPagePost)));
-            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Public_Void_PDM_1)), GetPatch(nameof(OpenNameplatesPagePre)), GetPatch(nameof(OpenNameplatesPagePost)));
+            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Public_Void_PDM_10)), GetPatch(nameof(OpenMainPagePre)), GetPatch(nameof(OpenMainPagePost)));
+            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Public_Void_PDM_14)), GetPatch(nameof(OpenExpressionMenuPre)),GetPatch(nameof(OpenExpressionMenuPost)));
+            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Private_Void_PDM_2)), GetPatch(nameof(OpenConfigPagePre)), GetPatch(nameof(OpenConfigPagePost)));
+            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Public_Void_PDM_10)), GetPatch(nameof(OpenEmojisPagePre)), GetPatch(nameof(OpenEmojisPagePost)));
+            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Public_Void_PDM_15)), GetPatch(nameof(OpenNameplatesPagePre)), GetPatch(nameof(OpenNameplatesPagePost)));
             //new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.OnEnable)), GetPatch(nameof(OpenNameplatesSizePre)), GetPatch(nameof(OpenNameplatesSizePost)));
             //new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.OnEnable)), GetPatch(nameof(OpenNameplatesVisibilityPre)), GetPatch(nameof(OpenNameplatesVisibilityPost)));
-            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Public_Void_PDM_10)), GetPatch(nameof(OpenSDK2ExpressionPre)), GetPatch(nameof(OpenSDK2ExpressionPost)));
-            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Private_Void_PDM_0)), GetPatch(nameof(OpenOptionsPre)), GetPatch(nameof(OpenOptionsPost)));
+            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Public_Void_PDM_11)), GetPatch(nameof(OpenSDK2ExpressionPre)), GetPatch(nameof(OpenSDK2ExpressionPost)));
+            new AstroPatch(typeof(ActionMenu).GetMethod(nameof(ActionMenu.Method_Public_Void_PDM_4)), GetPatch(nameof(OpenOptionsPre)), GetPatch(nameof(OpenOptionsPost)));
 
 
-            MelonLogger.Msg("Patches Applied");
+            Log.Write("Patches Applied");
         }
+
+
 
         private static void OpenConfigPagePre(ActionMenu __instance)
         {
@@ -178,27 +180,6 @@
         {
             Utilities.AddPedalsInList(nameplatesPagePost, __instance);
         }
-
-        //private static void OpenNameplatesVisibilityPre(ActionMenu __instance)
-        //{
-        //    Utilities.AddPedalsInList(nameplatesVisibilityPagePre, __instance);
-        //}
-        //
-        //private static void OpenNameplatesVisibilityPost(ActionMenu __instance)
-        //{
-        //    Utilities.AddPedalsInList(nameplatesVisibilityPagePost, __instance);
-        //}
-        //
-        //private static void OpenNameplatesSizePre(ActionMenu __instance)
-        //{
-        //    Utilities.AddPedalsInList(nameplatesSizePagePre, __instance);
-        //}
-        //
-        //private static void OpenNameplatesSizePost(ActionMenu __instance)
-        //{
-        //    Utilities.AddPedalsInList(nameplatesSizePagePost, __instance);
-        //}
-
         private static void OpenOptionsPre(ActionMenu __instance)
         {
             Utilities.AddPedalsInList(optionsPagePre, __instance);
@@ -219,24 +200,7 @@
             Utilities.AddPedalsInList(sdk2ExpressionPagePost, __instance);
         }
 
-        //private static MethodInfo FindAMMethod(List<string> keywords)
-        //{
-        //    return typeof(ActionMenu).GetMethods()
-        //        .First(m => m.Name.StartsWith("Method") && XRefExts.CheckXref(m, keywords));
-        //}
 
-        //private static void PatchMethod(List<string> keywords, string preName, string postName)
-        //{
-        //    try
-        //    {
-        //        new AstroPatch(FindAMMethod(keywords),
-        //            new HarmonyLib.HarmonyMethod(typeof(AstroActionMenuPatches).GetMethod(preName)),
-        //            new HarmonyLib.HarmonyMethod((typeof(AstroActionMenuPatches).GetMethod(postName))));
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        MelonLogger.Warning($"Failed to Patch Method: {preName} <-> {postName} with {string.Join(", ", keywords)}: {e}");
-        //    }
-        //}
+
     }
 }

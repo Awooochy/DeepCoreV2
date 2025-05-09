@@ -9,7 +9,8 @@ using DeepCore.ServerAPI;
 using DeepCore.Client.Misc;
 using DeepCore.Client.GUI;
 using DeepCore.ServerAPI.ClientResourceManager;
-using VRC.SDK.Internal.MeetingBunker;
+using Il2CppSystem.Threading;
+
 
 
 namespace DeepCore
@@ -85,9 +86,20 @@ namespace DeepCore
 
         protected static void Injectories()
         {
-            DeepConsole.Log("Startup", "Starting Injectories...");
-            ClassInjector.RegisterTypeInIl2Cpp<Client.Mono.CustomNameplate>();
-            ClassInjector.RegisterTypeInIl2Cpp<Client.Mono.CustomNameplateAccountAge>();
+            try
+            {
+                DeepConsole.Log("Startup", "Starting Injectories...");
+                ClassInjector.RegisterTypeInIl2Cpp<Client.Mono.CustomNameplate>();
+                ClassInjector.RegisterTypeInIl2Cpp<Client.Mono.CustomNameplateAccountAge>();
+                DeepConsole.Log("Startup", "It worked");
+                Thread.Sleep(2000);
+            }
+            catch (Exception e)
+            {
+                
+                DeepConsole.Log("Injectories", "SHIT BLOWED UP!!!");
+                DeepConsole.LogException(e);
+            }
         }
 
         protected static void QOLThings()

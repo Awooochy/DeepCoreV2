@@ -21,6 +21,9 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=788BC472_002D59F7_002D46F6_002DB760_002D65C18BA74389_002Fd_003AClient_002Fd_003AModule_002Fd_003AApplicationBot_002Ff_003AObjectExtensions_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=788BC472_002D59F7_002D46F6_002DB760_002D65C18BA74389_002Fd_003AClient_002Fd_003AModule_002Fd_003AApplicationBot_002Ff_003APlayerExtensions_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=788BC472_002D59F7_002D46F6_002DB760_002D65C18BA74389_002Fd_003AClient_002Fd_003AModule_002Fd_003AApplicationBot_002Ff_003ASocketConnection_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=788BC472_002D59F7_002D46F6_002DB760_002D65C18BA74389_002Fd_003AClient_002Fd_003AModule_002Fd_003AWorldHacks_002Ff_003AAmongUs_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="D:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\Assembly-CSharp.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK3A.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.UI.Core.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

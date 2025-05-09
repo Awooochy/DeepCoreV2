@@ -153,21 +153,21 @@
             });
         }
 
-        public static ActionMenuOpener GetLeftOpener(this ActionMenuDriver actionMenuDriver)
+        public static ActionMenuOpener GetLeftOpener(this ActionMenuController driver)
         {
-            var opener = actionMenuDriver.field_Public_ActionMenuOpener_0;
+            var opener = driver.field_Public_ActionMenuOpener_0;
             if (opener.GetActionMenuType() ==
                 ActionMenuOpener.ActionMenuType.Left)
                 return opener;
-            return actionMenuDriver.field_Public_ActionMenuOpener_1;
+            return driver.field_Public_ActionMenuOpener_1;
         }
 
-        public static ActionMenuOpener GetRightOpener(this ActionMenuDriver actionMenuDriver)
+        public static ActionMenuOpener GetRightOpener(this ActionMenuController driver)
         {
-            var opener = actionMenuDriver.field_Public_ActionMenuOpener_0;
+            var opener = driver.field_Public_ActionMenuOpener_0;
             if (opener.GetActionMenuType() == ActionMenuOpener.ActionMenuType.Right)
                 return opener;
-            return actionMenuDriver.field_Public_ActionMenuOpener_1;
+            return driver.field_Public_ActionMenuOpener_1;
         }
 
         public static ActionMenuOpener.ActionMenuType GetActionMenuType(this ActionMenuOpener opener)
@@ -260,10 +260,7 @@
             return radialPuppetMenu.field_Public_PedalGraphic_0; //only one
         }
 
-        public static TextMeshProUGUI GetTitle(this RadialPuppetMenu radialPuppetMenu)
-        {
-            return ((PuppetMenu)radialPuppetMenu).field_Public_TextMeshProUGUIEx_0; //only one
-        }
+        public static TextMeshProUGUI GetTitle(this RadialPuppetMenu radialPuppetMenu) => radialPuppetMenu.field_Public_TextMeshProUGUIEx_0; //only one
 
         public static TextMeshProUGUI GetTitle(this AxisPuppetMenu axisPuppetMenu)
         {
